@@ -1,0 +1,5 @@
+$(function() {
+	$("#flow-controller").jflow({
+		
+	});
+});
