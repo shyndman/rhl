@@ -29,7 +29,6 @@
 	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" type="text/css" href="css/style.css?v=1">
 	<link rel="stylesheet" type="text/css" href="css/custom-style.css?v=1">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css?v=1">
 
 	<!-- For the less-enabled mobile browsers like Opera Mini -->
 	<link rel="stylesheet" type="text/css" media="handheld" href="css/handheld.css?v=1">
@@ -71,32 +70,24 @@
 				<!-- Figure out why the div below is needed -->
 				<div style="height: 40px"></div>
 				
-				<!-- Lightbox buttons -->
-				<div id="portfolio-projects" class="box">
-					<h2>Projects</h2>
-					<div class="content portfolio-img">
+				<!-- Gallery -->
+				<div id="project-gallery">
+					<div id="project-rlf" class="project">
+						<h2>Project Title</h2>
+						<img src="img/portfolio/rlf/back_after_1.jpg" alt="Backyard After 1">
+						<ul class="project-thumbs">
+							<li>
+								<a href="#"><img src="" width="" height="" alt=""></a>
+							</li>
+						</ul>
 					</div>
-				</div>
-				<div id="portfolio-designs" class="box" href="#portfolio-designs-lightbox">
-					<h2>Designs</h2>
-					<div class="content portfolio-img">
-					</div>
-				</div>
-				<div id="portfolio-specialty" class="box" style="visibility:hidden">
-					<h2>Specialty Items</h2>
-					<div class="content portfolio-img">
-					</div>
-				</div>
-				
-				<!-- Lightboxes -->
-				<div style="display:none">
-					<div id="portfolio-projects-lightbox">
-						<h2>Projects</h2>
-					</div>
-				</div>
-				<div style="display:none">
-					<div id="portfolio-designs-lightbox">
-						<h2>Designs</h2>
+					<div id="project-squires" class="project">
+						<h2>Project Title</h2>
+						<ul class="project-thumbs">
+							<li>
+								<a href="#"><img src="" width="" height="" alt=""></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -132,19 +123,18 @@
 			</div>
 		</div>
 	</div>
-	<footer>
+	<!--footer>
 		<div class="section-stripe">	
 		</div>
  		<div class="content-centered">
  			FOOTER
  		</div>
-	</footer>
+	</footer-->
 
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>')</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
-	<script src="js/jquery.fancybox-1.3.1.js"></script>
 	<script src="js/flow.js?v=1"></script>
 	<script src="js/script.js?v=1"></script>
 

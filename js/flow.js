@@ -1,6 +1,8 @@
 $.widget("ui.flow", {
 	/** Widget options, populated with defaults */
-	options: {},
+	options: {
+		slideSel: ".content-slide"
+	},
 	
 	/** The slide map (id to jquery element) */
 	slides: {},
@@ -22,7 +24,7 @@ $.widget("ui.flow", {
 	setupSlides: function() {
 		var self = this;
 		// find slides, populate the slide map
-		var s = this.element.find(".content-slide").each(function() {
+		var s = this.element.find(this.options.slideSel).each(function() {
 			self.slides[$(this).attr("id")] = $(this);
 		});
 	},

@@ -7,13 +7,13 @@ $font: 'Yanone Kaffeesatz', arial, serif;
 $primary: #D3D3D3;
 $secondary: #DDD;
 $content-width: 950px;
-$content-height: 470px;
+$content-height: 600px;
 $box-content-bg: #F9F9F9;
 $footer-height: 40px;
 
 /* page constants */
 
-$portfolio-padding: 67px;
+$portfolio-padding: 30px;
 
 /* color constants */
 
@@ -208,40 +208,20 @@ footer {
 #portfolio {
 	width: $content-width - 2 * $portfolio-padding;
 	padding: 0 $portfolio-padding;
-	
-	.box {
-		cursor: hand;
-		cursor: pointer;	
-		.portfolio-img {
-			height: 180px;
-		}
-		&:hover {
-			h2 {
-				color: $portfolio-highlight;
-			}
-			.content {
-				border-color: $portfolio-faded;
-			}
-		}
+}
+
+#project-gallery {
+
+}
+
+.project {
+	h2 {
+		
 	}
 }
 
-#portfolio-projects {
-	float: right;
-	.portfolio-img {
-		background: url('../img/portfolio-projects.jpg') no-repeat top left;
-	}
-}
-
-#portfolio-specialty {
-	margin: 40px auto 0;
-	.portfolio-img {
-		background: url('../img/portfolio-specialty.jpg') no-repeat top left;
-	}
-}
-
-#portfolio-designs .portfolio-img {
-	background: url('../img/portfolio-designs.jpg') no-repeat top left;
+.project-thumbs {
+	list-style: none;
 }
 
 /* about */

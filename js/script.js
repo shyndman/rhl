@@ -21,20 +21,7 @@ window.log = function(){
 $(function() {
 	// For testing without js:
 	// return;
-	
-	// Get the lightbox set up
-	var defaultLightboxOptions = {
-		autoDimensions: false,
-		width: 300,
-		height: 300	
-	};
-	
-	$.each(["designs", "projects"], function(idx, val) {
-		$("#portfolio-" + val).fancybox($.extend({
-			href: '#portfolio-' + val + '-lightbox',
-		}, defaultLightboxOptions));
-	});
-	
+		
 	// Page title setup
 	var pageTitleBase = document.title;
 	pageTitleBase += " - ";
@@ -42,12 +29,17 @@ $(function() {
 	// Content scroller
 	var scroller = $("#content-scroller").flow();
 	
+	// Gallery scroller
+	var projectScroller = $("#project-gallery").flow({
+		slideSel: ".project"
+	});
+	
 	// Navigation
 	var lastNav = null;
 	var sectionStripe = $(".section-stripe");
 	var navLinks = $("nav > a");
 	navLinks.click(function(eventObj) {
-		var self = $(this)
+		var self = $(this);
 		
 		// section stripe
 		lastNav 
