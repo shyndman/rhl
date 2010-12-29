@@ -23,8 +23,6 @@ $.widget("ui.flow", {
 	/** Sets up the content slides for sliding */
 	setupSlides: function() {
 		var self = this;
-		console.log(this.element);
-		console.log(this.element.find(this.options.slideSel));
 		
 		// find slides, populate the slide map
 		var s = this.element.find(this.options.slideSel).each(function() {

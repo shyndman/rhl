@@ -1,0 +1,11 @@
+portfolio
+6c	logo img
+14c	menu
+1c	menu sel
+43c	gal
+
+menu
+6c	logo img
+23c	logo word
+14c portfolio menu
+9c	about menu
