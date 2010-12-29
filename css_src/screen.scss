@@ -101,7 +101,10 @@ header {
 // Content
 
 #content {
-	margin-top: 88px;
+	@include column(58);
+	height: 570px;
+	overflow: hidden;
+	margin-top: 14px;
 	
 	.content-slide {
 		height: 570px;

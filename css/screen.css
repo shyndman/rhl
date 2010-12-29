@@ -213,14 +213,24 @@ header h1 {
 
 /* line 103, ../css_src/screen.scss */
 #content {
-  margin-top: 88px;
+  display: inline;
+  float: left;
+  margin-right: 0px;
+  width: 870px;
+  height: 570px;
+  overflow: hidden;
+  margin-top: 14px;
 }
-/* line 106, ../css_src/screen.scss */
+/* line 138, ../../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content {
+  overflow-x: hidden;
+}
+/* line 109, ../css_src/screen.scss */
 #content .content-slide {
   height: 570px;
 }
 
-/* line 116, ../css_src/screen.scss */
+/* line 119, ../css_src/screen.scss */
 #portfolio-projects {
   display: inline;
   float: left;
@@ -234,22 +244,22 @@ header h1 {
 * html #portfolio-projects {
   overflow-x: hidden;
 }
-/* line 123, ../css_src/screen.scss */
+/* line 126, ../css_src/screen.scss */
 #portfolio-projects li {
   list-style-type: none;
   padding: 5px 0 5px 30px;
 }
-/* line 129, ../css_src/screen.scss */
+/* line 132, ../css_src/screen.scss */
 #portfolio-projects a:link {
   color: #FFF;
   text-decoration: none;
 }
-/* line 133, ../css_src/screen.scss */
+/* line 136, ../css_src/screen.scss */
 #portfolio-projects a:hover {
   color: #a8bd3a;
 }
 
-/* line 139, ../css_src/screen.scss */
+/* line 142, ../css_src/screen.scss */
 #portfolio-projects-indicator {
   display: inline;
   float: left;
@@ -262,7 +272,7 @@ header h1 {
   overflow-x: hidden;
 }
 
-/* line 144, ../css_src/screen.scss */
+/* line 147, ../css_src/screen.scss */
 #portfolio-selected-project {
   display: inline;
   float: left;
@@ -276,36 +286,36 @@ header h1 {
   overflow-x: hidden;
 }
 
-/* line 150, ../css_src/screen.scss */
+/* line 153, ../css_src/screen.scss */
 #portfolio-selected-img {
   margin: 7px 0 0px 10px;
 }
 
-/* line 154, ../css_src/screen.scss */
+/* line 157, ../css_src/screen.scss */
 #portfolio-thumbnails {
   height: 82px;
   width: 635px;
   overflow: hidden;
 }
-/* line 159, ../css_src/screen.scss */
+/* line 162, ../css_src/screen.scss */
 #portfolio-thumbnails ul {
   width: 1000px;
   list-style-type: none;
   margin-left: 4px;
 }
-/* line 165, ../css_src/screen.scss */
+/* line 168, ../css_src/screen.scss */
 #portfolio-thumbnails li {
   display: inline;
   float: left;
   padding-top: 4px;
   margin-left: 7px;
 }
-/* line 171, ../css_src/screen.scss */
+/* line 174, ../css_src/screen.scss */
 #portfolio-thumbnails li:hover {
   background-color: #a8bd3a;
 }
 
-/* line 177, ../css_src/screen.scss */
+/* line 180, ../css_src/screen.scss */
 .selected {
   background-color: #a8bd3a;
 }
