@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-
-	<!-- www.phpied.com/conditional-comments-block-downloads/ -->
-	<!--[if IE]><![endif]-->
 
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
 	     Remove this if you use the .htaccess -->
@@ -13,130 +14,88 @@
 	<title>Ross Hyndman Landscaping</title>
 	<meta name="description" content="">
 	<meta name="author" content="Scott Hyndman">
-
-	<!--	Mobile Viewport Fix
-		      j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
-			device-width : Occupy full width of the screen in its current orientation
-			initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-			maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
-	-->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-
-	<!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- CSS : implied media="all" -->
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=1">
-	<link rel="stylesheet" type="text/css" href="css/custom-style.css?v=1">
-
-	<!-- For the less-enabled mobile browsers like Opera Mini -->
-	<link rel="stylesheet" type="text/css" media="handheld" href="css/handheld.css?v=1">
+	<link rel="stylesheet" type="text/css" href="css/screen.css?v=2">
 
 	<!-- Google Font Directory -->
-	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold&subset=latin">
+	<!--link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold&subset=latin"-->
 
 	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/modernizr-1.5.min.js"></script>
 </head>
-<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
-	<header>
-		<div>
-			<div id="topper" class="content-centered"></div>
-		</div>
-		<div class="stripe">
-			<div id="title1" class="title content-centered"><h1>Ross Hyndman</h1></div>
-		</div>
-		<div class="title-container">
-			<div id="title2" class="title content-centered"><h1>Landscaping</h1></div>
-		</div>
-		<div class="stripe">
-			<nav class="content-centered">
-				<a href="#portfolio" class="portfolio" data-page-title="Portfolio" data-stripe-class="portfolio">Portfolio</a>
-				<a href="#about" class="about" data-page-title="About" data-stripe-class="about">About</a>
-				<a href="#contact" class="contact" data-page-title="Contact" data-stripe-class="contact">Contact</a>
-			</nav>
-		</div>
-		<div class="section-stripe">	
-		</div>
-	</header>
-	<div id="content" class="content-centered">
-		<div id="content-scroller">
-			<div id="portfolio" class="content-slide" >
-				<!-- Figure out why the div below is needed -->
-				<div style="height: 40px"></div>
-				
-				<!-- Gallery -->
-				<div id="project-gallery" style="display:none">
-					<div id="project-rlf" class="project">
-						<h2>Project Title</h2>
-						<img src="img/portfolio/rlf/back_after_1.jpg" alt="Backyard After 1">
-						<ul class="project-thumbs">
-							<li>
-								<a href="#"><img src="" width="" height="" alt=""></a>
-							</li>
-						</ul>
-					</div>
-					<div id="project-squires" class="project">
-						<h2>Project Title</h2>
-						<ul class="project-thumbs">
-							<li>
-								<a href="#"><img src="" width="" height="" alt=""></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="about" class="content-slide">
-				<div id="about-restore" class="box" style="float:right;">
-					<h2>Restore</h2>
-					<div class="content about-text">
-						This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design.
-					</div>
-				</div>
-				<div id="about-build" class="box" style="float:right;">
-					<h2>Build</h2>
-					<div class="content about-text">
-						This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design.
-					</div>
-				</div>
-				<div id="about-design" class="box">
-					<h2>Design</h2>
-					<div class="content about-text">
-						This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design.
-					</div>
-				</div>
+<body>
+	<div id="rhl">
+		<!-- Logos and Header -->
+		<div id="logo-img">
 			
-				<div id="about-ross" class="box clearfix">
-					<h2>About Ross</h2>
-					<div class="content about-text">
-						This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design. This is something about design. This is really something about design. This is really really really something about design.
+		</div>
+		<header>
+			<div id="title-line-1" class="title-line">
+				<h1 class="logo-title">Ross Hyndman</h1>
+			</div>
+			<div id="title-line-2" class="title-line">
+				<h1 class="logo-title">Landscaping</h1>
+				<nav>
+					<ul>
+						<li id="portfolio-nav"><a href="#portfolio" data-page-title="Portfolio">Portfolio</a></li>
+						<li id="about-nav"><a href="#about" data-page-title="About">About</a></li>
+						<li id="contact-nav"><a href="#contact" data-page-title="Contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="title-line-3" class="title-line">
+				<div class="logo-title"></div>
+				<div id="portfolio-indicator"></div>
+				<div id="about-indicator"></div>
+				<div id="contact-indicator"></div>
+			</div>
+		</header>
+				
+		<!-- Content -->
+		<div id="content">
+			<div id="slide-scroller">
+				<div id="portfolio" class="content-slide">
+					<ul id="portfolio-projects">
+						<li><a href="#">Red Leaf Farm</a></li>
+						<li><a href="#">Squires Residence</a></li>
+					</ul>
+					<div id="portfolio-projects-indicator">
+					</div>
+					<div id="portfolio-selected-project">
+						<div id="portfolio-selected-img">
+							<!-- 625x470 -->
+							<img src="img/portfolio/squires/complete_after.JPG" width="625" height="470" alt="Backyard after">
+						</div>
+						<div id="portfolio-thumbnails">
+							<ul>
+								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="contact" class="content-slide">
-				<div class="blurb">Contact me anytime</div>
-				<div class="email"><a href="mailto:ross@rosshyndman.com">ross@rosshyndman.com</a></div>
-				<div class="phone">647-894-9990</div>
+								
+				
+				<div id="about" class="content-slide">
+				</div>
+				<div id="contact" class="content-slide">
+					<div class="blurb">Contact me anytime</div>
+					<div class="email"><a href="mailto:ross@rosshyndman.com">ross@rosshyndman.com</a></div>
+					<div class="phone">647-894-9990</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<!--footer>
-		<div class="section-stripe">	
-		</div>
- 		<div class="content-centered">
- 			FOOTER
- 		</div>
-	</footer-->
-
+	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.3.min.js"><\/script>')</script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
+	<script src="js/jquery-1.4.3.min.js"></script>
+	<script src="js/jquery-ui-1.8.5.js"></script>
 	<script src="js/flow.js?v=1"></script>
 	<script src="js/script.js?v=1"></script>
 

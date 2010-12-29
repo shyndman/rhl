@@ -27,25 +27,14 @@ $(function() {
 	pageTitleBase += " - ";
 	
 	// Content scroller
-	var scroller = $("#content-scroller").flow();
-	
-	// Gallery scroller
-	var projectScroller = $("#project-gallery").flow({
-		slideSel: ".project"
-	});
+	var scroller = $("#slide-scroller").flow();
 	
 	// Navigation
 	var lastNav = null;
-	var sectionStripe = $(".section-stripe");
-	var navLinks = $("nav > a");
+	var navLinks = $("header nav a");
 	navLinks.click(function(eventObj) {
 		var self = $(this);
-		
-		// section stripe
-		lastNav 
-			? sectionStripe.switchClass(lastNav.data("stripe-class"), self.data("stripe-class"), 350)
-			: sectionStripe.addClass(self.data("stripe-class"), 350);
-		
+				
 		// selected nav link
 		navLinks.removeClass("selected");
 		self.addClass("selected");
@@ -60,5 +49,4 @@ $(function() {
 		lastNav = self;
 		return false;
 	});
-	navLinks.filter("[href=" + (window.location.hash || "#portfolio") + "]").click();
 });
