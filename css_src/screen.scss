@@ -84,6 +84,9 @@ header {
 				text-decoration: none;
 			}
 			
+			&.selected {
+				color: $highlight;
+			}	
 		}
 
 		li {
@@ -105,10 +108,21 @@ header {
 	height: 570px;
 	overflow: hidden;
 	margin-top: 14px;
-	
-	.content-slide {
-		height: 570px;
-	}
+}
+
+#slide-scroller {
+	width: 10000px;
+	position: relative;
+}
+
+.content-slide {
+	@include column(58);
+	height: 570px;
+}
+
+.js .content-slide {
+	float: left;
+	margin-right: 700px;
 }
 
 // Portfolio
@@ -174,9 +188,9 @@ $projects-padding: 15px;
 		&:hover {
 			background-color: $highlight;
 		}
+		&.selected {
+			background-color: $highlight;
+		}
 	}
 }
 
-.selected {
-	background-color: $highlight;
-}
