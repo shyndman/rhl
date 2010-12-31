@@ -59,8 +59,9 @@
 			<div id="slide-scroller">
 				<div id="portfolio" class="content-slide">
 					<ul id="portfolio-projects">
-						<li><a href="#">Red Leaf Farm</a></li>
-						<li><a href="#">Squires Residence</a></li>
+						<script id="portfolio-project-link-tmpl" type="text/x-jquery-tmpl">
+						    <li><a href="#">${name}</a></li>
+						</script>
 					</ul>
 					<div id="portfolio-projects-indicator">
 					</div>
@@ -71,19 +72,22 @@
 						</div>
 						<div id="portfolio-thumbnails">
 							<ul>
-								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
-								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
-								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
-								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
-								<li><img src="img/fake-thumb.png" width="92" height="69"></li>
+								<script id="portfolio-thumb-tmpl" type="text/x-jquery-tmpl">
+									<li>
+										<a href="#">
+											<img src="${thumbSrc}" width="92" height="69">
+										</a>
+									</li>
+								</script>
 							</ul>
 						</div>
 					</div>
 				</div>
 								
-				
-				<div id="about" class="content-slide">&nbsp;
+								
+				<div id="about" class="content-slide">
 				</div>
+				
 				<div id="contact" class="content-slide">
 					<div class="blurb">Contact me anytime</div>
 					<div class="email"><a href="mailto:ross@rosshyndman.com">ross@rosshyndman.com</a></div>
@@ -94,8 +98,10 @@
 	</div>
 	
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<script src="js/jquery-1.4.3.min.js"></script>
+	<script src="js/jquery-1.4.4.js"></script>
 	<script src="js/jquery-ui-1.8.5.js"></script>
+	<script src="js/jquery.tmpl-beta1.js"></script>
+	<script src="js/underscore-1.1.3.js"></script>
 	<script src="js/ui-controls.js?v=1"></script>
 	<script src="js/script.js?v=1"></script>
 

@@ -1,0 +1,21 @@
+[
+	{
+		"name" : "Red Leaf Farm",
+		"rootPhotoDirectory" : "img/portfolio/rlf",
+		"photos" : 
+		[
+			{ "src" : "back_after_1" },
+			{},
+			{}
+		]
+	},
+	{
+		"name" : "Squires Residence",
+		"photos" : 
+		[
+			{},
+			{},
+			{}
+		]
+	}
+]
