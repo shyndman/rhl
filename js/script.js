@@ -28,31 +28,51 @@ $(function() {
 		scroller.flow("slideToId", $(this).attr("href").substring(1));
 		
 		return false;
-	});
-	
-	// Select the portfolio
-	navLinks.first().click();
+	}).first().click();
 	
 	// PORTFOLIO
 	
-	var setSelectedProject = function(projectObj) {
-		
+	var setSelectedPhoto = function(photo) {
+		var fullImg = $("#portfolio-selected-img > img");
+		fullImg.attr("src", photo.project.baseDir + "/" + photo.image + ".jpg");
 	};
 	
-	var setPortfolio = function(portfolioObj) {
-		var projectMap = _.reduce(portfolioObj, function(memo, project) {
+	var setSelectedProject = function(project) {
+		var thumbHolder = $("#portfolio-thumbnails > ul").empty();
+
+		var thumbMap = _.reduce(project.photos, function(memo, photo) {
+			photo.project = project;
+			memo[photo.image] = photo;
+			return memo;
+		}, {});
+
+		// Add the thumbnails
+		$("#portfolio-thumb-tmpl").tmpl(
+			project.photos, {baseDir: project.baseDir}).appendTo(thumbHolder);
+			
+		// Add click handlers to the thumbs
+		thumbHolder.find("a").click(function() {
+			console.log($(this));
+			setSelectedPhoto(thumbMap[$(this).data("key")]);
+			return false;
+		}).first().click();
+	};
+	
+	var setPortfolio = function(portfolio) {
+		// Get a project map, keyed on name, for project selection
+		var projectMap = _.reduce(portfolio, function(memo, project) {
 			memo[project.name] = project;
 			return memo;
 		}, {});
 		
-		$("#portfolio-project-link-tmpl").tmpl(portfolioObj).appendTo("#portfolio-projects");
+		$("#portfolio-project-link-tmpl").tmpl(portfolio).appendTo("#portfolio-projects");
 		
 		$("#portfolio-projects a").click(function() {
 			setSelectedProject(projectMap[$(this).text()]);
 			return false;
 		});
 		
-		setSelectedProject(portfolioObj[0]);
+		setSelectedProject(portfolio[0]);
 	};
 	
 	// Load portfolio JSON

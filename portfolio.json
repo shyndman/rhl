@@ -1,21 +1,26 @@
 [
 	{
 		"name" : "Red Leaf Farm",
-		"rootPhotoDirectory" : "img/portfolio/rlf",
+		"baseDir" : "img/portfolio/rlf",
 		"photos" : 
 		[
-			{ "src" : "back_after_1" },
-			{},
-			{}
+			{ "image" : "stairs_after_2" },
+			{ "image" : "back_after_2" },
+			{ "image" : "back_after_1" },
+			{ "image" : "back_after_3" },
+			{ "image" : "back_after_4" }
 		]
 	},
 	{
 		"name" : "Squires Residence",
+		"baseDir" : "img/portfolio/squires",
 		"photos" : 
 		[
-			{},
-			{},
-			{}
+			{ "image" : "complete_after" },
+			{ "image" : "sitting" },
+			{ "image" : "towards_house1_after" },
+			{ "image" : "towards_house2_after" },
+			{ "image" : "bed2" }
 		]
 	}
 ]
