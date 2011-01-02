@@ -33,6 +33,8 @@ $(function() {
 	// PORTFOLIO
 	
 	var setSelectedPhoto = function(photo) {
+		console.log(photo.image);
+		
 		var fullImg = $("#portfolio-selected-img > img");
 		fullImg.attr("src", photo.project.baseDir + "/" + photo.image + ".jpg");
 	};
@@ -52,7 +54,9 @@ $(function() {
 			
 		// Add click handlers to the thumbs
 		thumbHolder.find("a").click(function() {
-			console.log($(this));
+			$(this).parent().siblings().removeClass("selected");
+			$(this).parent().addClass("selected");
+			
 			setSelectedPhoto(thumbMap[$(this).data("key")]);
 			return false;
 		}).first().click();
