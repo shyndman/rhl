@@ -9,188 +9,139 @@
 
 // Constants
 
-$site-background: #333;
-$title-font-size: 32px;
-$highlight: #a8bd3a;
+$site-background: #FFF;
+$title-font-size: 12px;
 
 body {
 	background: $site-background;
-	color: $highlight;
+	color: #000;
 	font-family: "Century Gothic";
-}
-
-// Layout related
-
-#rhl {
-	@include container;
 }
 
 // Header
 
-#logo-img {
-	@include column(6, true);
-	min-height: 100%;
-	height: 300px;
-	background: transparent url(../img/logo-tree.png) no-repeat 0px 20px;
-}
-
-header, .title-line {
-	@include column(58, true);
-}
-
-.logo-title {
-	@include column(23, true);	
-}
-
-#portfolio-nav, #portfolio-indicator {
-	@include column(14);
-}
-
-#about-nav, #about-indicator {
-	@include column(9);
-}
-
-#contact-nav, #contact-indicator {
-	@include column(12);
+#header-container {
+  border-bottom: #333333 solid 5px;
 }
 
 header {
-	margin-top: 30px;
-	text-transform: uppercase;
-	font-size: $title-font-size;
-	
-	h1 {
-		margin-bottom: -5px;
-	}
+	@include container;
+	height: 90px;
 }
 
-#title-line-1 {
-	h1 {
-		padding-left: 10px;
-	}
+#logo-title {
+	@include column(32);
 }
 
-#title-line-2 {
-	background-color: #000;
-	
-	nav {
-		a {
-			&:link, &:visited {
-				color: #FFF;
-				text-decoration: none;
-			}
-			&:hover {
-				color: $highlight;
-				text-decoration: none;
-			}
-			
-			&.selected {
-				color: $highlight;
-			}	
-		}
-
-		li {
-			margin-bottom: -5px;
-		}
-	}
-}
-
-#title-line-3 {
-	div {
-		height: 6px;
-	}
+#header-info-blurb {
+  @include column(32, true);
+  text-align: right;
 }
 
 // Content
 
+#content-container {
+  height: 501px;
+  margin-top: 3px;
+  border-top: #afc923 solid 5px;
+  border-bottom: #afc923 solid 5px;
+}
+
 #content {
-	@include column(58);
-	height: 570px;
-	overflow: hidden;
-	margin-top: 14px;
+  @include container;
+  margin: 0 auto;
+  
+  nav {
+    @include push(23);
+    @include column(41, true);
+    margin-top: 27px;
+    margin-bottom: 20px;
+    
+    ul {
+      list-style-type: none;
+    }
+    
+    li {
+      font-size: 11px;
+      text-transform: uppercase;
+      float: left;
+      margin: 0 17px;
+    }
+  }
 }
 
-#slide-scroller {
-	width: 10000px;
-	position: relative;
+#page-text {
+  @include column(19);
+  
+  p {
+    color: #666; 
+    font-size: 10px;
+    line-height: 20px;
+    margin-left: 29px;
+    text-align: justify;
+  }
 }
 
-.content-slide {
-	@include column(58);
-	height: 570px;
+#page-pictures {
+  @include column(41);
+  
+  margin-left: 37px;
+  
+  img.slice {
+    width: 533px;
+    height: 133px;
+    margin-bottom: 5px;
+  }
 }
 
-.js .content-slide {
-	float: left;
-	margin-right: 700px;
+#top-slice {
+  margin-top: 5px;
 }
 
-// Portfolio
-
-$current-project-height: 563px;
-$projects-padding: 15px;
-
-#portfolio-projects {
-	@include column(14);
-		
-	height: $current-project-height - $projects-padding;
-	background-color: #000;
-	padding-top: $projects-padding;
-				
-	li {
-		list-style-type: none;
-		padding: 5px 0 5px 30px;
-	}
-	
-	a {
-		&:link, &:visited {
-			color: #FFF;
-			text-decoration: none;
-		}
-		&:hover {
-			color: $highlight;
-		}
-	}
+#middle-slice {
+  margin-left: 26px;
 }
 
-#portfolio-projects-indicator {
-	@include column(1);
-	min-height: 100%;
+#bottom-slice {
+  margin-left: 52px;
 }
 
-#portfolio-selected-project {
-	@include column(43);
-	height: $current-project-height;
-	background-color: #000;
+// Footer
+
+footer {
+  @include container;
+  
+  h2 {
+    text-align: right;
+  }
 }
 
-#portfolio-selected-img {
-	margin: 7px 0 0px 10px;
-}
+// Semantic classes (pulled from HTML5 boilerplate)
 
-#portfolio-thumbnails {
-	height: 82px;
-	width: 635px;
-	overflow: hidden;
-	
-	ul {
-		width: 1000px;
-		list-style-type: none;
-		margin-left: 4px;
-	}
-	
-	li {
-		display: inline;
-		float: left;
-		padding-top: 4px;
-		margin-left: 7px;
-		
-		&:hover {
-			background-color: $highlight;
-		}
-		&.selected {
-			background-color: $highlight;
-		}
-	}
-}
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+   j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
