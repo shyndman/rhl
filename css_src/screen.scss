@@ -84,7 +84,7 @@ header {
   margin: 0 auto;
   
   nav {
-    @include push(27);
+    @include push(26);
     @include column(41, true);
     margin-top: 27px;
     margin-bottom: 20px;
@@ -99,6 +99,7 @@ header {
       float: left;
       
       a {
+        text-align: center;
         display: block;
       }
     }
@@ -152,6 +153,11 @@ header {
 
 .bottom-slice {
   margin-left: 52px;
+}
+
+.spacer {
+  margin: 4px auto;
+  display: block;
 }
 
 // Footer

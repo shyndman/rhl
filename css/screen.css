@@ -175,7 +175,7 @@ header {
   display: inline;
   float: right;
   position: relative;
-  margin: 0 -405px 1.5em 405px;
+  margin: 0 -390px 1.5em 390px;
   display: inline;
   float: left;
   margin-right: 0;
@@ -199,41 +199,42 @@ header {
 }
 /* line 101, ../css_src/screen.scss */
 #content nav li a {
+  text-align: center;
   display: block;
 }
 
-/* line 108, ../css_src/screen.scss */
+/* line 109, ../css_src/screen.scss */
 #home-nav {
   width: 68px;
 }
 
-/* line 109, ../css_src/screen.scss */
+/* line 110, ../css_src/screen.scss */
 #portfolio-nav {
   width: 85px;
 }
 
-/* line 110, ../css_src/screen.scss */
+/* line 111, ../css_src/screen.scss */
 #services-nav {
   width: 103px;
 }
 
-/* line 111, ../css_src/screen.scss */
+/* line 112, ../css_src/screen.scss */
 #approach-nav {
   width: 117px;
 }
 
-/* line 112, ../css_src/screen.scss */
+/* line 113, ../css_src/screen.scss */
 #contact-nav {
   width: 78px;
 }
 
-/* line 114, ../css_src/screen.scss */
+/* line 115, ../css_src/screen.scss */
 .page {
   height: 530px;
   margin-bottom: 100px;
 }
 
-/* line 119, ../css_src/screen.scss */
+/* line 120, ../css_src/screen.scss */
 .page-text {
   display: inline;
   float: left;
@@ -244,18 +245,18 @@ header {
 * html .page-text {
   overflow-x: hidden;
 }
-/* line 122, ../css_src/screen.scss */
+/* line 123, ../css_src/screen.scss */
 .page-text p {
   font-size: 11px;
   line-height: 20px;
   text-align: justify;
 }
-/* line 128, ../css_src/screen.scss */
+/* line 129, ../css_src/screen.scss */
 .page-text em {
   font-weight: bold;
 }
 
-/* line 133, ../css_src/screen.scss */
+/* line 134, ../css_src/screen.scss */
 .page-pictures {
   display: inline;
   float: left;
@@ -267,36 +268,42 @@ header {
 * html .page-pictures {
   overflow-x: hidden;
 }
-/* line 138, ../css_src/screen.scss */
+/* line 139, ../css_src/screen.scss */
 .page-pictures img.slice {
   width: 565px;
   height: 141px;
   margin-bottom: 5px;
 }
 
-/* line 145, ../css_src/screen.scss */
+/* line 146, ../css_src/screen.scss */
 .top-slice {
   margin-top: 5px;
 }
 
-/* line 149, ../css_src/screen.scss */
+/* line 150, ../css_src/screen.scss */
 .middle-slice {
   margin-left: 26px;
 }
 
-/* line 153, ../css_src/screen.scss */
+/* line 154, ../css_src/screen.scss */
 .bottom-slice {
   margin-left: 52px;
 }
 
-/* line 159, ../css_src/screen.scss */
+/* line 158, ../css_src/screen.scss */
+.spacer {
+  margin: 4px auto;
+  display: block;
+}
+
+/* line 165, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 162, ../css_src/screen.scss */
+/* line 168, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -304,7 +311,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 172, ../css_src/screen.scss */
+/* line 178, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -316,7 +323,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 176, ../css_src/screen.scss */
+/* line 182, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -324,7 +331,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 180, ../css_src/screen.scss */
+/* line 186, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -332,7 +339,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 184, ../css_src/screen.scss */
+/* line 190, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -345,7 +352,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 187, ../css_src/screen.scss */
+/* line 193, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -357,14 +364,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 190, ../css_src/screen.scss */
+/* line 196, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 194, ../css_src/screen.scss */
+/* line 200, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -372,13 +379,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 195, ../css_src/screen.scss */
+/* line 201, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 197, ../css_src/screen.scss */
+/* line 203, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
