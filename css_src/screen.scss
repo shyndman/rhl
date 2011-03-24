@@ -9,13 +9,34 @@
 
 // Constants
 
+$highlight-color: #AFC923;
 $site-background: #FFF;
 $title-font-size: 12px;
+$header-height: 95px;
+$body-font-size: 11px;
+$body-font-family: "Century Gothic";
+$body-line-height: 20px;
+$body-font-color: #666;
+$content-height: 530px;
 
 body {
 	background: $site-background;
-	color: #000;
-	font-family: "Century Gothic";
+	color: $body-font-color;
+	font-family: $body-font-family;
+}
+
+a, a:link, a:active, a:visited {
+  color: #555;
+  text-decoration: none;
+}
+
+a.active {
+  color: $highlight-color;
+  font-weight: bold;
+}
+
+em {
+  color: $highlight-color;
 }
 
 // Header
@@ -26,22 +47,33 @@ body {
 
 header {
 	@include container;
-	height: 90px;
+	height: $header-height;
 }
 
 #logo-title {
 	@include column(32);
+	background: transparent url('../img/logo.png') no-repeat;
+	height: $header-height;
 }
 
 #header-info-blurb {
   @include column(32, true);
+  
+  font-size: $body-font-size;
   text-align: right;
+  line-height: $body-line-height;
+  margin-top: 20px;
+  
+  em {
+    font-size: 17px;
+  }
 }
 
 // Content
 
 #content-container {
-  height: 501px;
+  height: $content-height;
+  overflow-y: hidden;
   margin-top: 3px;
   border-top: #afc923 solid 5px;
   border-bottom: #afc923 solid 5px;
@@ -52,7 +84,7 @@ header {
   margin: 0 auto;
   
   nav {
-    @include push(23);
+    @include push(27);
     @include column(41, true);
     margin-top: 27px;
     margin-bottom: 20px;
@@ -62,47 +94,63 @@ header {
     }
     
     li {
-      font-size: 11px;
+      font-size: $body-font-size;
       text-transform: uppercase;
       float: left;
-      margin: 0 17px;
+      
+      a {
+        display: block;
+      }
     }
   }
 }
 
-#page-text {
-  @include column(19);
+#home-nav { width: 68px; }
+#portfolio-nav { width: 85px; }
+#services-nav { width: 103px; }
+#approach-nav { width: 117px; }
+#contact-nav { width: 78px; }
+
+.page {
+  height: $content-height;
+  margin-bottom: 100px;
+}
+
+.page-text {
+  @include column(20);
   
   p {
-    color: #666; 
-    font-size: 10px;
-    line-height: 20px;
-    margin-left: 29px;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
     text-align: justify;
+  }
+  
+  em {
+    font-weight: bold;
   }
 }
 
-#page-pictures {
+.page-pictures {
   @include column(41);
   
   margin-left: 37px;
   
   img.slice {
-    width: 533px;
-    height: 133px;
+    width: 565px;
+    height: 141px;
     margin-bottom: 5px;
   }
 }
 
-#top-slice {
+.top-slice {
   margin-top: 5px;
 }
 
-#middle-slice {
+.middle-slice {
   margin-left: 26px;
 }
 
-#bottom-slice {
+.bottom-slice {
   margin-left: 52px;
 }
 
@@ -112,7 +160,9 @@ footer {
   @include container;
   
   h2 {
-    text-align: right;
+    background: transparent url('../img/get-outside.png') no-repeat right top;
+    height: 33px;
+    margin-top: 3px;
   }
 }
 
