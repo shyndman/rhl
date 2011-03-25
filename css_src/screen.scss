@@ -7,6 +7,9 @@
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
+// Import opacity functionality
+@import "compass/css3/opacity";
+
 // Constants
 
 $highlight-color: #AFC923;
@@ -33,10 +36,6 @@ a, a:link, a:active, a:visited {
 a.active {
   color: $highlight-color;
   font-weight: bold;
-}
-
-em {
-  color: $highlight-color;
 }
 
 // Header
@@ -136,7 +135,7 @@ header {
   
   margin-left: 37px;
   
-  img.slice {
+  .slice {
     width: 565px;
     height: 141px;
     margin-bottom: 5px;
@@ -158,6 +157,75 @@ header {
 .spacer {
   margin: 4px auto;
   display: block;
+}
+
+#home {
+  .top-slice {
+    background-image: url('../img/slices/home/top.jpg');
+  }
+  .middle-slice {
+    background-image: url('../img/slices/home/middle.jpg');
+  }
+  .bottom-slice {
+    background-image: url('../img/slices/home/bottom.jpg');    
+  }
+}
+
+
+#portfolio {
+  .slice div {
+    width: 565px;
+    height: 141px;
+    background-color: $highlight-color;
+    cursor:pointer;
+    cursor:hand;
+    
+    /* Opacity */
+    @include opacity(0.7);
+    
+    h3 {
+      color: #222;
+      font-size: 14px;
+      /*font-weight: bold;*/
+      text-align: center;
+      letter-spacing: 1px;
+      padding-top: (141px - 20px) / 2;
+    }
+  }
+  
+  .top-slice {
+    background-image: url('../img/slices/portfolio/squires.jpg');
+  }
+  .middle-slice {
+    background-image: url('../img/slices/portfolio/rlf.jpg');
+  }
+  .bottom-slice {
+    background-image: url('../img/slices/portfolio/design.jpg');    
+  }
+}
+
+#services {
+  .top-slice {
+    background-image: url('../img/slices/services/top.jpg');
+  }
+  .middle-slice {
+    background-image: url('../img/slices/services/middle.jpg');
+  }
+  .bottom-slice {
+    background-image: url('../img/slices/services/bottom.jpg');    
+  }
+}
+
+#approach {
+  .top-slice {
+    background-image: url('../img/slices/approach/top.jpg');
+  }
+  .middle-slice {
+    background-image: url('../img/slices/approach/middle.jpg');
+  }
+  .bottom-slice {
+    background-image: url('../img/slices/approach/bottom.jpg');    
+  }
 }
 
 // Footer

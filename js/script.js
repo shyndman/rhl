@@ -10,16 +10,25 @@ $(function() {
 	    
 	  $($(this).attr('href')).hide();
 	}).click(function() {
+	  // triggers location management
+	  location.hash = $(this).attr('href').substr(1);
+
+	  return false;
+	});
+	
+	/** Selects the specified page */
+	var selectPage = function(page) {
+	  // Determine nav link associated with page
+	  var clickedLink = $('#content nav a[href=#' + page + ']');
+	  
 	  // Div hiding (to be replaced with animation)
 	  $(activeLink.attr('href')).hide();
-	  $($(this).attr('href')).show();
+	  $('#' + page).show();
 	  
 	  // Style links
 	  styleInactiveLink(activeLink);
-	  styleActiveLink(activeLink = $(this));
-	  
-	  return false;
-	});
+	  styleActiveLink(activeLink = clickedLink);
+	};
 	
 	/** Styles a page navigation link as active */
 	var styleActiveLink = function(link) {
@@ -39,4 +48,24 @@ $(function() {
     var curText = link.text();
     link.text(curText.substr(1, curText.length - 2))
 	};
+	
+	//
+	// Unobtrusively add behaviour to certain classes
+	//
+	$('.content-on-hover').hover(
+	  function() {
+	    $(this).children().removeClass('hidden');
+	  },
+	  function() {
+	    $(this).children().addClass('hidden');	    
+	  }
+	);
+	
+	//
+	// Initialize history management
+	//
+	
+	$.history.init(function(hash) {
+    selectPage(hash == "" ? "home" : hash);
+  }, { unescape: ",/" });
 });

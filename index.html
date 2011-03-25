@@ -19,7 +19,8 @@
 
 	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" type="text/css" href="css/screen.css?v=2">
-
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
+  
 	<!-- Google Font Directory -->
 	<!--link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold&subset=latin"-->
 
@@ -58,9 +59,9 @@
           <p>As a professional member of Landscape Ontario, RHL takes pride in meeting the high standards of this respected horticultural trades organization. Landscape Ontario continues to raise the bar for the landscaping industry by requiring its members to observe its principles of ethical and professional conduct. Members also have access to the latest technical information, resources and services. Customers using a Landscape Ontario contractor are assured the peace of mind they deserve.</p>
     		</div>
     		<div class="page-pictures">
-    		  <img src="img/slices/home/top.jpg" class="top-slice slice">
-    		  <img src="img/slices/home/middle.jpg" class="middle-slice slice">
-    		  <img src="img/slices/home/bottom.jpg" class="bottom-slice slice">
+    		  <div class="top-slice slice"></div>
+    		  <div class="middle-slice slice"></div>
+    		  <div class="bottom-slice slice"></div>
     		</div>
   		</div>
   		<div id="portfolio" class="page">
@@ -71,9 +72,15 @@
           <p><em>Marci Squires and Brian Anderson</em></p>
     		</div>
     		<div class="page-pictures">
-    		  <img src="img/slices/portfolio/top.jpg" class="top-slice slice">
-    		  <img src="img/slices/portfolio/middle.jpg" class="middle-slice slice">
-    		  <img src="img/slices/portfolio/bottom.jpg" class="bottom-slice slice">
+    		  <div class="top-slice slice content-on-hover">
+    		    <div class="hidden"><h3>Mimico Residence</h3></div>
+    		  </div>
+    		  <div class="middle-slice slice content-on-hover">
+    		    <div class="hidden"><h3>Red Leaf Farm</h3></div>
+    		  </div>
+    		  <div class="bottom-slice slice content-on-hover">
+    		    <div class="hidden"><h3>Designs</h3></div>
+    		  </div>
     		</div>
   		</div>
   		<div id="services" class="page">
@@ -86,9 +93,9 @@
           <p><em>Large Tree Installation</em> — RHL has access to numerous species of mature trees that can grace your garden.</p>
     		</div>
     		<div class="page-pictures">
-    		  <img src="img/slices/services/top.jpg" class="top-slice slice">
-    		  <img src="img/slices/services/middle.jpg" class="middle-slice slice">
-    		  <img src="img/slices/services/bottom.jpg" class="bottom-slice slice">
+    		  <div class="top-slice slice"></div>
+    		  <div class="middle-slice slice"></div>
+    		  <div class="bottom-slice slice"></div>
     		</div>
   		</div>
   		<div id="approach" class="page">
@@ -96,9 +103,9 @@
           <p>It starts with a meeting. We discuss your vision and requests for the project. The site is photographed, measurements are taken, and all information is brought back to our studio. At this point, we transcribe the details into a design, tailored to your requirements and style. Once completed, we walk you through a 3D model of your future garden, using design and building plans as reference. Revisions, if necessary, are made. When the design is finalized and agreed upon, the start date is scheduled. During the times when we are not at your premises, orders are being placed with suppliers, the permit application process is underway, and the building plans are being reviewed amongst the crew. The scheduled start date arrives, and construction begins. Throughout the project, we pay particular attention to quality standards and to your comfort. We always welcome your questions while we build your future garden — after all, your satisfaction is the final product. When completed, we take time to discuss the intricacies of your new garden, and address any follow-up questions. Finally, we take photographs of the completed project.</p>
     		</div>
     		<div class="page-pictures">
-    		  <img src="img/slices/approach/top.jpg" class="top-slice slice">
-    		  <img src="img/slices/approach/middle.jpg" class="middle-slice slice">
-    		  <img src="img/slices/approach/bottom.jpg" class="bottom-slice slice">
+    		  <div class="top-slice slice"></div>
+    		  <div class="middle-slice slice"></div>
+    		  <div class="bottom-slice slice"></div>
     		</div>
   		</div>
 		</div>
@@ -110,7 +117,9 @@
 	
 	<script src="js/jquery-1.4.4.js"></script>
 	<script src="js/underscore-1.1.3.js"></script>
+	<script src="js/plugins.js"></script>
 	<script src="js/script.js?v=3"></script>
+	<script src="js/jquery.fancybox-1.3.4.pack.js">
 	
 	<!--[if lt IE 7 ]>
 	  <script src="js/dd_belatedpng.js?v=1"></script>

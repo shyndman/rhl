@@ -81,36 +81,31 @@ a img {
   border: none;
 }
 
-/* line 22, ../css_src/screen.scss */
+/* line 25, ../css_src/screen.scss */
 body {
   background: white;
   color: #666666;
   font-family: "Century Gothic";
 }
 
-/* line 28, ../css_src/screen.scss */
+/* line 31, ../css_src/screen.scss */
 a, a:link, a:active, a:visited {
   color: #555;
   text-decoration: none;
 }
 
-/* line 33, ../css_src/screen.scss */
+/* line 36, ../css_src/screen.scss */
 a.active {
   color: #afc923;
   font-weight: bold;
 }
 
-/* line 38, ../css_src/screen.scss */
-em {
-  color: #afc923;
-}
-
-/* line 44, ../css_src/screen.scss */
+/* line 43, ../css_src/screen.scss */
 #header-container {
   border-bottom: #333333 solid 5px;
 }
 
-/* line 48, ../css_src/screen.scss */
+/* line 47, ../css_src/screen.scss */
 header {
   width: 960px;
   margin: 0 auto;
@@ -119,7 +114,7 @@ header {
   height: 95px;
 }
 
-/* line 53, ../css_src/screen.scss */
+/* line 52, ../css_src/screen.scss */
 #logo-title {
   display: inline;
   float: left;
@@ -133,7 +128,7 @@ header {
   overflow-x: hidden;
 }
 
-/* line 59, ../css_src/screen.scss */
+/* line 58, ../css_src/screen.scss */
 #header-info-blurb {
   display: inline;
   float: left;
@@ -148,12 +143,12 @@ header {
 * html #header-info-blurb {
   overflow-x: hidden;
 }
-/* line 67, ../css_src/screen.scss */
+/* line 66, ../css_src/screen.scss */
 #header-info-blurb em {
   font-size: 17px;
 }
 
-/* line 74, ../css_src/screen.scss */
+/* line 73, ../css_src/screen.scss */
 #content-container {
   height: 530px;
   overflow-y: hidden;
@@ -162,7 +157,7 @@ header {
   border-bottom: #afc923 solid 5px;
 }
 
-/* line 82, ../css_src/screen.scss */
+/* line 81, ../css_src/screen.scss */
 #content {
   width: 960px;
   margin: 0 auto;
@@ -170,7 +165,7 @@ header {
   *zoom: 1;
   margin: 0 auto;
 }
-/* line 86, ../css_src/screen.scss */
+/* line 85, ../css_src/screen.scss */
 #content nav {
   display: inline;
   float: right;
@@ -187,54 +182,54 @@ header {
 * html #content nav {
   overflow-x: hidden;
 }
-/* line 92, ../css_src/screen.scss */
+/* line 91, ../css_src/screen.scss */
 #content nav ul {
   list-style-type: none;
 }
-/* line 96, ../css_src/screen.scss */
+/* line 95, ../css_src/screen.scss */
 #content nav li {
   font-size: 11px;
   text-transform: uppercase;
   float: left;
 }
-/* line 101, ../css_src/screen.scss */
+/* line 100, ../css_src/screen.scss */
 #content nav li a {
   text-align: center;
   display: block;
 }
 
-/* line 109, ../css_src/screen.scss */
+/* line 108, ../css_src/screen.scss */
 #home-nav {
   width: 68px;
 }
 
-/* line 110, ../css_src/screen.scss */
+/* line 109, ../css_src/screen.scss */
 #portfolio-nav {
   width: 85px;
 }
 
-/* line 111, ../css_src/screen.scss */
+/* line 110, ../css_src/screen.scss */
 #services-nav {
   width: 103px;
 }
 
-/* line 112, ../css_src/screen.scss */
+/* line 111, ../css_src/screen.scss */
 #approach-nav {
   width: 117px;
 }
 
-/* line 113, ../css_src/screen.scss */
+/* line 112, ../css_src/screen.scss */
 #contact-nav {
   width: 78px;
 }
 
-/* line 115, ../css_src/screen.scss */
+/* line 114, ../css_src/screen.scss */
 .page {
   height: 530px;
   margin-bottom: 100px;
 }
 
-/* line 120, ../css_src/screen.scss */
+/* line 119, ../css_src/screen.scss */
 .page-text {
   display: inline;
   float: left;
@@ -245,18 +240,18 @@ header {
 * html .page-text {
   overflow-x: hidden;
 }
-/* line 123, ../css_src/screen.scss */
+/* line 122, ../css_src/screen.scss */
 .page-text p {
   font-size: 11px;
   line-height: 20px;
   text-align: justify;
 }
-/* line 129, ../css_src/screen.scss */
+/* line 128, ../css_src/screen.scss */
 .page-text em {
   font-weight: bold;
 }
 
-/* line 134, ../css_src/screen.scss */
+/* line 133, ../css_src/screen.scss */
 .page-pictures {
   display: inline;
   float: left;
@@ -268,42 +263,115 @@ header {
 * html .page-pictures {
   overflow-x: hidden;
 }
-/* line 139, ../css_src/screen.scss */
-.page-pictures img.slice {
+/* line 138, ../css_src/screen.scss */
+.page-pictures .slice {
   width: 565px;
   height: 141px;
   margin-bottom: 5px;
 }
 
-/* line 146, ../css_src/screen.scss */
+/* line 145, ../css_src/screen.scss */
 .top-slice {
   margin-top: 5px;
 }
 
-/* line 150, ../css_src/screen.scss */
+/* line 149, ../css_src/screen.scss */
 .middle-slice {
   margin-left: 26px;
 }
 
-/* line 154, ../css_src/screen.scss */
+/* line 153, ../css_src/screen.scss */
 .bottom-slice {
   margin-left: 52px;
 }
 
-/* line 158, ../css_src/screen.scss */
+/* line 157, ../css_src/screen.scss */
 .spacer {
   margin: 4px auto;
   display: block;
 }
 
-/* line 165, ../css_src/screen.scss */
+/* line 163, ../css_src/screen.scss */
+#home .top-slice {
+  background-image: url("../img/slices/home/top.jpg");
+}
+/* line 166, ../css_src/screen.scss */
+#home .middle-slice {
+  background-image: url("../img/slices/home/middle.jpg");
+}
+/* line 169, ../css_src/screen.scss */
+#home .bottom-slice {
+  background-image: url("../img/slices/home/bottom.jpg");
+}
+
+/* line 176, ../css_src/screen.scss */
+#portfolio .slice div {
+  width: 565px;
+  height: 141px;
+  background-color: #afc923;
+  cursor: pointer;
+  cursor: hand;
+  /* Opacity */
+  opacity: 0.7;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+/* line 186, ../css_src/screen.scss */
+#portfolio .slice div h3 {
+  color: #222;
+  font-size: 14px;
+  /*font-weight: bold;*/
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 60.5px;
+}
+/* line 196, ../css_src/screen.scss */
+#portfolio .top-slice {
+  background-image: url("../img/slices/portfolio/squires.jpg");
+}
+/* line 199, ../css_src/screen.scss */
+#portfolio .middle-slice {
+  background-image: url("../img/slices/portfolio/rlf.jpg");
+}
+/* line 202, ../css_src/screen.scss */
+#portfolio .bottom-slice {
+  background-image: url("../img/slices/portfolio/design.jpg");
+}
+
+/* line 208, ../css_src/screen.scss */
+#services .top-slice {
+  background-image: url("../img/slices/services/top.jpg");
+}
+/* line 211, ../css_src/screen.scss */
+#services .middle-slice {
+  background-image: url("../img/slices/services/middle.jpg");
+}
+/* line 214, ../css_src/screen.scss */
+#services .bottom-slice {
+  background-image: url("../img/slices/services/bottom.jpg");
+}
+
+/* line 220, ../css_src/screen.scss */
+#approach .top-slice {
+  background-image: url("../img/slices/approach/top.jpg");
+}
+/* line 223, ../css_src/screen.scss */
+#approach .middle-slice {
+  background-image: url("../img/slices/approach/middle.jpg");
+}
+/* line 226, ../css_src/screen.scss */
+#approach .bottom-slice {
+  background-image: url("../img/slices/approach/bottom.jpg");
+}
+
+/* line 233, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 168, ../css_src/screen.scss */
+/* line 236, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -311,7 +379,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 178, ../css_src/screen.scss */
+/* line 246, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -323,7 +391,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 182, ../css_src/screen.scss */
+/* line 250, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -331,7 +399,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 186, ../css_src/screen.scss */
+/* line 254, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -339,7 +407,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 190, ../css_src/screen.scss */
+/* line 258, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -352,7 +420,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 193, ../css_src/screen.scss */
+/* line 261, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -364,14 +432,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 196, ../css_src/screen.scss */
+/* line 264, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 200, ../css_src/screen.scss */
+/* line 268, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -379,13 +447,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 201, ../css_src/screen.scss */
+/* line 269, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 203, ../css_src/screen.scss */
+/* line 271, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
