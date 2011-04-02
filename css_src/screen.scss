@@ -21,6 +21,9 @@ $body-font-family: "Century Gothic";
 $body-line-height: 20px;
 $body-font-color: #666;
 $content-height: 530px;
+$input-color: #E2E2E2;
+$label-font-size: 13px;
+$input-font-size: 16px;
 
 body {
 	background: $site-background;
@@ -227,6 +230,28 @@ header {
     background-image: url('../img/slices/approach/bottom.jpg');    
   }
 }
+
+#contact {
+  label {
+    font-size: $label-font-size;
+  }
+  
+  input, textarea {
+    color: $body-font-color;
+    background-color: $input-color;
+    font-size: $input-font-size;
+    width: 100%;
+    padding: 5px 5px;
+    border: none;
+    display: block;
+  }
+}
+
+#contact-deets-labels {
+  @include column(10);
+  height: $content-height;
+}
+
 
 // Footer
 
