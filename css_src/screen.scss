@@ -231,10 +231,8 @@ header {
   }
 }
 
-#contact {
-  label {
-    font-size: $label-font-size;
-  }
+#contact {  
+  font-size: $label-font-size;
   
   input, textarea {
     color: $body-font-color;
@@ -245,11 +243,31 @@ header {
     border: none;
     display: block;
   }
+  
+  textarea {
+    height: 250px;
+  }
+}
+
+#contact-deets {
+  padding-top: 94px;
 }
 
 #contact-deets-labels {
+  @include push(15);
   @include column(10);
   height: $content-height;
+  
+  h4 {
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+}
+
+#contact-deets-values {
+  div {
+    margin-bottom: 14px;
+  }
 }
 
 

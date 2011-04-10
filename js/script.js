@@ -37,7 +37,7 @@ $(function() {
 	    
 	  link.addClass('active');
 	  link.text('[' + link.text() + ']');
-	}
+	};
 
 	/** Styles a page navigation link as inactive */	
 	var styleInactiveLink = function(link) {
@@ -60,6 +60,23 @@ $(function() {
 	    $(this).children().addClass('hidden');	    
 	  }
 	);
+	
+	//
+	// Gallery setup
+	//
+  $(".gallery-link").click(function() {
+    var galKey = $(this).data("gal-key");
+    var gallery = window.galleryInfo[galKey];
+    console.log(galKey + ", " + gallery);
+    
+    $.fancybox(gallery.slice(), {
+      'padding'           : 0,
+      'transitionIn'      : 'fade',
+      'transitionOut'     : 'none',
+      'type'              : 'image',
+      'changeFade'        : 100
+    });
+  });
 	
 	//
 	// Initialize history management

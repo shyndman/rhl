@@ -364,11 +364,11 @@ header {
   background-image: url("../img/slices/approach/bottom.jpg");
 }
 
-/* line 235, ../css_src/screen.scss */
-#contact label {
+/* line 234, ../css_src/screen.scss */
+#contact {
   font-size: 13px;
 }
-/* line 239, ../css_src/screen.scss */
+/* line 237, ../css_src/screen.scss */
 #contact input, #contact textarea {
   color: #666666;
   background-color: #e2e2e2;
@@ -378,9 +378,22 @@ header {
   border: none;
   display: block;
 }
+/* line 247, ../css_src/screen.scss */
+#contact textarea {
+  height: 250px;
+}
 
-/* line 250, ../css_src/screen.scss */
+/* line 252, ../css_src/screen.scss */
+#contact-deets {
+  padding-top: 94px;
+}
+
+/* line 256, ../css_src/screen.scss */
 #contact-deets-labels {
+  display: inline;
+  float: right;
+  position: relative;
+  margin: 0 -225px 1.5em 225px;
   display: inline;
   float: left;
   margin-right: 0px;
@@ -391,15 +404,25 @@ header {
 * html #contact-deets-labels {
   overflow-x: hidden;
 }
+/* line 261, ../css_src/screen.scss */
+#contact-deets-labels h4 {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
 
-/* line 258, ../css_src/screen.scss */
+/* line 268, ../css_src/screen.scss */
+#contact-deets-values div {
+  margin-bottom: 14px;
+}
+
+/* line 276, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 261, ../css_src/screen.scss */
+/* line 279, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -407,7 +430,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 271, ../css_src/screen.scss */
+/* line 289, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -419,7 +442,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 275, ../css_src/screen.scss */
+/* line 293, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -427,7 +450,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 279, ../css_src/screen.scss */
+/* line 297, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -435,7 +458,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 283, ../css_src/screen.scss */
+/* line 301, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -448,7 +471,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 286, ../css_src/screen.scss */
+/* line 304, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -460,14 +483,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 289, ../css_src/screen.scss */
+/* line 307, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 293, ../css_src/screen.scss */
+/* line 311, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -475,13 +498,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 294, ../css_src/screen.scss */
+/* line 312, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 296, ../css_src/screen.scss */
+/* line 314, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
