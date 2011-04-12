@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // usage: log('inside coolFunc',this,arguments);
 // paulirish.com/2009/log-a-lightweight-wrapper-for-consolelog/
 window.log = function(){
@@ -61,4 +62,10 @@ $(function() {
 		return false;
 	});
 	navLinks.filter("[href=" + (window.location.hash || "#portfolio") + "]").click();
+=======
+$(function() {
+	$("#flow-controller").jflow({
+		
+	});
+>>>>>>> 169ba70c28ccbdcaa8dc23da3dca2514432214ca
 });
