@@ -16,6 +16,13 @@ $(function() {
 	  return false;
 	});
 	
+	// Contain page specific show behaviours
+	var onPageShownHandlers = {
+	  contact: function(pageElem) {
+	    $("#contact-name").focus();
+	  }
+	};
+	
 	/** Selects the specified page */
 	var selectPage = function(page) {
 	  // Determine nav link associated with page
@@ -23,11 +30,15 @@ $(function() {
 	  
 	  // Div hiding (to be replaced with animation)
 	  $(activeLink.attr('href')).hide();
-	  $('#' + page).show();
+	  var pageElem = $('#' + page).show();
 	  
 	  // Style links
 	  styleInactiveLink(activeLink);
 	  styleActiveLink(activeLink = clickedLink);
+	  
+	  // If we have a page handler, invoke it
+	  if (onPageShownHandlers[page] != undefined)
+	    onPageShownHandlers[page](pageElem);
 	};
 	
 	/** Styles a page navigation link as active */
@@ -52,6 +63,7 @@ $(function() {
 	//
 	// Unobtrusively add behaviour to certain classes
 	//
+	
 	$('.content-on-hover').hover(
 	  function() {
 	    $(this).children().removeClass('hidden');
@@ -64,6 +76,7 @@ $(function() {
 	//
 	// Gallery setup
 	//
+	
   $(".gallery-link").click(function() {
     var galKey = $(this).data("gal-key");
     var gallery = window.galleryInfo[galKey];
@@ -73,9 +86,72 @@ $(function() {
       'transitionIn'      : 'fade',
       'transitionOut'     : 'none',
       'type'              : 'image',
-      'changeFade'        : 0
+      'changeFade'        : 100
     });
+  }); 
+
+  //
+  // Contact form
+  //
+
+  var contactForm = $("#contact form").submit(function(e) {
+    var form = $(this);
+    if (!validateForm(form)) {
+      log("Form invalid");
+      return false;
+    }
+
+    // hide the submit button
+    $("#contact-submit").hide();
+
+    // show progres indicator
+    $("#contact-sending").show();
+
+    $.ajax({
+      url: "contact.php",
+      type: "post",
+      data: form.serialize(),
+      success: function() {
+        $("#contact-sending").hide();
+        $("#contact-sent-status").show();
+        $("#contact input, #contact textarea").val("");
+      },
+      error: function() {
+        $("#contact-sending").hide();
+        $("#contact-sent-status").text("ERROR! Please send an email instead.").show();
+        $("#contact input, #contact textarea").val("");
+      }
+    });
+
+    return false;
   });
+
+  var validateForm = function(form) {
+    form.find("input, textarea").removeClass("error");
+
+    var isValid = true;
+    isValid = validateRequired($("#contact-name")) && isValid;
+    isValid = validateRequired($("#contact-email")) && isValid;
+    isValid = validateRequired($("#contact-phone")) && isValid;
+    isValid = validateRequired($("#contact-message")) && isValid;
+
+    return isValid;
+  };
+
+  var validateRequired = function(field) {
+    if ($.trim(field.val()).length == 0) {
+      field.addClass("error");
+      return false;
+    }
+
+    return true;
+  };
+
+  $("#contact-submit").click(function(e) {
+    contactForm.submit(); // triggers the handler above
+    return false;
+  });
+
 	
 	//
 	// Initialize history management

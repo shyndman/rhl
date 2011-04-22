@@ -1,6 +1,7 @@
 # rosshyndman.com specific
 
 img/portfolio/*/originals
+config/*.php
 
 # Numerous always-ignore extensions
 *.diff

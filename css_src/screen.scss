@@ -45,6 +45,7 @@ a.active {
 
 #header-container {
   border-bottom: #333333 solid 5px;
+  height: $header-height;
 }
 
 header {
@@ -243,6 +244,18 @@ header {
     padding: 5px 5px;
     border: none;
     display: block;
+    border: 1px solid #CCC;
+    
+    &.error {
+      border: 1px solid #F00;
+      background-color: #FEE;
+    }
+  }
+  
+  .submit-container {
+    padding-top: 10px;
+    text-align: right;
+    font-weight: bold;
   }
   
   textarea {
