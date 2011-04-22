@@ -49,5 +49,8 @@ $headers = $mime->headers($headers);
 // Sending the email using smtp
 $mail =& Mail::factory("smtp", $smtp_params);
 $result = $mail->send($recipient, $headers, $body);
+
+//! We should probably handle a bad send here
+
 ?>
 {"success":true}
