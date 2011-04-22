@@ -66,10 +66,12 @@ $(function() {
 	
 	$('.content-on-hover').hover(
 	  function() {
-	    $(this).children().removeClass('hidden');
+	    $(this).find(".on-over").removeClass('hidden');
+      $(this).find(".on-out").addClass('hidden');
 	  },
 	  function() {
-	    $(this).children().addClass('hidden');	    
+	    $(this).find(".on-over").addClass('hidden');
+      $(this).find(".on-out").removeClass('hidden');
 	  }
 	);
 	

@@ -17,7 +17,7 @@ $site-background: #FFF;
 $title-font-size: 12px;
 $header-height: 95px;
 $body-font-size: 11px;
-$body-font-family: "Century Gothic";
+$body-font-family: "Century Gothic", "sans-serif";
 $body-line-height: 20px;
 $body-font-color: #666;
 $content-height: 530px;
@@ -182,24 +182,42 @@ header {
 
 
 #portfolio {
-  .slice div {
+  .slice {
+    overflow: hidden;
+    cursor:pointer;
+    cursor:hand;
+  }
+
+  .slice-overlay {
     width: 565px;
     height: 141px;
     background-color: $highlight-color;
-    cursor:pointer;
-    cursor:hand;
-    
-    /* Opacity */
     @include opacity(0.7);
-    
-    h3 {
+  }
+
+  h3 {
       color: #222;
       font-size: 14px;
-      /*font-weight: bold;*/
       text-align: center;
       letter-spacing: 1px;
       padding-top: (141px - 20px) / 2;
-    }
+
+      position: relative;
+      margin-top: -141px;
+  }
+
+  .call-to-action {
+    color: #222;
+    font-size: 12px;
+    background-color: #BBB;
+    padding: 5px 10px;
+
+    @include opacity(0.8);
+
+    display: inline;
+    float: right;
+    margin-top: (141 - 30px);
+    margin-right: 5px;
   }
   
   .top-slice {
