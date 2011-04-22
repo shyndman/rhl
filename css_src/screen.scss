@@ -48,7 +48,7 @@ a.active {
   height: $header-height;
 }
 
-header {
+#header {
 	@include container;
 	height: $header-height;
 }
