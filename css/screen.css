@@ -273,40 +273,45 @@ header {
 }
 
 /* line 150, ../css_src/screen.scss */
+.quote {
+  font-style: italic;
+}
+
+/* line 154, ../css_src/screen.scss */
 .top-slice {
   margin-top: 5px;
 }
 
-/* line 154, ../css_src/screen.scss */
+/* line 158, ../css_src/screen.scss */
 .middle-slice {
   margin-left: 26px;
 }
 
-/* line 158, ../css_src/screen.scss */
+/* line 162, ../css_src/screen.scss */
 .bottom-slice {
   margin-left: 52px;
 }
 
-/* line 162, ../css_src/screen.scss */
+/* line 166, ../css_src/screen.scss */
 .spacer {
   margin: 4px auto;
   display: block;
 }
 
-/* line 168, ../css_src/screen.scss */
+/* line 172, ../css_src/screen.scss */
 #home .top-slice {
   background-image: url("../img/slices/home/top.jpg");
 }
-/* line 171, ../css_src/screen.scss */
+/* line 175, ../css_src/screen.scss */
 #home .middle-slice {
   background-image: url("../img/slices/home/middle.jpg");
 }
-/* line 174, ../css_src/screen.scss */
+/* line 178, ../css_src/screen.scss */
 #home .bottom-slice {
   background-image: url("../img/slices/home/bottom.jpg");
 }
 
-/* line 181, ../css_src/screen.scss */
+/* line 185, ../css_src/screen.scss */
 #portfolio .slice div {
   width: 565px;
   height: 141px;
@@ -318,7 +323,7 @@ header {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
-/* line 191, ../css_src/screen.scss */
+/* line 195, ../css_src/screen.scss */
 #portfolio .slice div h3 {
   color: #222;
   font-size: 14px;
@@ -327,50 +332,50 @@ header {
   letter-spacing: 1px;
   padding-top: 60.5px;
 }
-/* line 201, ../css_src/screen.scss */
+/* line 205, ../css_src/screen.scss */
 #portfolio .top-slice {
   background-image: url("../img/slices/portfolio/squires.jpg");
 }
-/* line 204, ../css_src/screen.scss */
+/* line 208, ../css_src/screen.scss */
 #portfolio .middle-slice {
   background-image: url("../img/slices/portfolio/rlf.jpg");
 }
-/* line 207, ../css_src/screen.scss */
+/* line 211, ../css_src/screen.scss */
 #portfolio .bottom-slice {
   background-image: url("../img/slices/portfolio/design.jpg");
 }
 
-/* line 213, ../css_src/screen.scss */
+/* line 217, ../css_src/screen.scss */
 #services .top-slice {
   background-image: url("../img/slices/services/top.jpg");
 }
-/* line 216, ../css_src/screen.scss */
+/* line 220, ../css_src/screen.scss */
 #services .middle-slice {
   background-image: url("../img/slices/services/middle.jpg");
 }
-/* line 219, ../css_src/screen.scss */
+/* line 223, ../css_src/screen.scss */
 #services .bottom-slice {
   background-image: url("../img/slices/services/bottom.jpg");
 }
 
-/* line 225, ../css_src/screen.scss */
+/* line 229, ../css_src/screen.scss */
 #approach .top-slice {
   background-image: url("../img/slices/approach/top.jpg");
 }
-/* line 228, ../css_src/screen.scss */
+/* line 232, ../css_src/screen.scss */
 #approach .middle-slice {
   background-image: url("../img/slices/approach/middle.jpg");
 }
-/* line 231, ../css_src/screen.scss */
+/* line 235, ../css_src/screen.scss */
 #approach .bottom-slice {
   background-image: url("../img/slices/approach/bottom.jpg");
 }
 
-/* line 236, ../css_src/screen.scss */
+/* line 240, ../css_src/screen.scss */
 #contact {
   font-size: 13px;
 }
-/* line 239, ../css_src/screen.scss */
+/* line 243, ../css_src/screen.scss */
 #contact input, #contact textarea {
   color: #666666;
   background-color: #e2e2e2;
@@ -381,28 +386,28 @@ header {
   display: block;
   border: 1px solid #CCC;
 }
-/* line 249, ../css_src/screen.scss */
+/* line 253, ../css_src/screen.scss */
 #contact input.error, #contact textarea.error {
   border: 1px solid #F00;
   background-color: #FEE;
 }
-/* line 255, ../css_src/screen.scss */
+/* line 259, ../css_src/screen.scss */
 #contact .submit-container {
   padding-top: 10px;
   text-align: right;
   font-weight: bold;
 }
-/* line 261, ../css_src/screen.scss */
+/* line 265, ../css_src/screen.scss */
 #contact textarea {
   height: 250px;
 }
 
-/* line 266, ../css_src/screen.scss */
+/* line 270, ../css_src/screen.scss */
 #contact-deets {
   padding-top: 94px;
 }
 
-/* line 270, ../css_src/screen.scss */
+/* line 274, ../css_src/screen.scss */
 #contact-deets-labels {
   display: inline;
   float: right;
@@ -418,25 +423,25 @@ header {
 * html #contact-deets-labels {
   overflow-x: hidden;
 }
-/* line 275, ../css_src/screen.scss */
+/* line 279, ../css_src/screen.scss */
 #contact-deets-labels h4 {
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-/* line 282, ../css_src/screen.scss */
+/* line 286, ../css_src/screen.scss */
 #contact-deets-values div {
   margin-bottom: 14px;
 }
 
-/* line 290, ../css_src/screen.scss */
+/* line 294, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 293, ../css_src/screen.scss */
+/* line 297, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -444,7 +449,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 303, ../css_src/screen.scss */
+/* line 307, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -456,7 +461,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 307, ../css_src/screen.scss */
+/* line 311, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -464,7 +469,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 311, ../css_src/screen.scss */
+/* line 315, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -472,7 +477,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 315, ../css_src/screen.scss */
+/* line 319, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -485,7 +490,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 318, ../css_src/screen.scss */
+/* line 322, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -497,14 +502,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 321, ../css_src/screen.scss */
+/* line 325, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 325, ../css_src/screen.scss */
+/* line 329, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -512,13 +517,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 326, ../css_src/screen.scss */
+/* line 330, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 328, ../css_src/screen.scss */
+/* line 332, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
