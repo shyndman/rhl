@@ -9,11 +9,11 @@ $(function() {
 	    return;
 	    
 	  $($(this).attr('href')).hide();
-	}).click(function() {
+	}).click(function(e) {
+    e.preventDefault();
+    
 	  // triggers location management
 	  location.hash = $(this).attr('href').substr(1);
-
-	  return false;
 	});
 	
 	// Contain page specific show behaviours

@@ -85,7 +85,7 @@ a img {
 body {
   background: white;
   color: #666666;
-  font-family: "Century Gothic", "sans-serif";
+  font-family: "Century Gothic", sans-serif;
 }
 
 /* line 34, ../css_src/screen.scss */
