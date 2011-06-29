@@ -204,4 +204,4 @@ window.log = function(){
 
     $.extend(self, implementations[self.type]);
     $.history = self;
-})(jQuery);
+})($);

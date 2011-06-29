@@ -20,6 +20,12 @@ if (strlen($name) == 0 ||
   return;
 }
 
+//Write to a log file containing the values
+$fh = fopen('logged-messages.txt', 'a');
+$stringData = "$name\n$phone\n$email\n\n$message\n-----------\n";
+fwrite($fh, $stringData);
+fclose($fh);
+
 //Sending Email to form owner
 $sender = $email;
 $subject = "rosshyndman.com - $name sent you an email!";
@@ -53,4 +59,4 @@ $result = $mail->send($recipient, $headers, $body);
 //! We should probably handle a bad send here
 
 ?>
-{"success":true}
+{"success":true, "result":"<?php echo $result; ?>"}
