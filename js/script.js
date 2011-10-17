@@ -18,68 +18,68 @@ _gaq.push(['_setAccount', 'UA-22674522-1']);
 $(function() {
 	// For testing without js:
 	// return;
-	
-	var activeLink = $('#content nav a.active');
-	$('#content nav a').each(function() {
+
+	var activeLink = $('#content nav.pages a.active');
+	$('#content nav.pages a').each(function() {
 	  if ($(this).hasClass('active'))
 	    return;
-	    
+
 	  $($(this).attr('href')).hide();
 	}).click(function(e) {
     e.preventDefault();
-    
+
 	  // triggers location management
 	  location.hash = $(this).attr('href').substr(1);
 	});
-	
+
 	// Contain page specific show behaviours
 	var onPageShownHandlers = {
 	  contact: function(pageElem) {
 	    $("#contact-name").focus();
 	  }
 	};
-	
+
 	/** Selects the specified page */
 	var selectPage = function(page) {
 	  // Determine nav link associated with page
 	  var clickedLink = $('#content nav a[href=#' + page + ']');
-	  
+
 	  // Div hiding (to be replaced with animation)
 	  $(activeLink.attr('href')).hide();
 	  var pageElem = $('#' + page).show();
-	  
+
 	  // Style links
 	  styleInactiveLink(activeLink);
 	  styleActiveLink(activeLink = clickedLink);
-	  
+
 	  // If we have a page handler, invoke it
 	  if (onPageShownHandlers[page] != undefined)
 	    onPageShownHandlers[page](pageElem);
 	};
-	
+
 	/** Styles a page navigation link as active */
 	var styleActiveLink = function(link) {
 	  if (link.hasClass('active'))
 	    return;
-	    
+
 	  link.addClass('active');
 	  link.text('[' + link.text() + ']');
 	};
 
-	/** Styles a page navigation link as inactive */	
+	/** Styles a page navigation link as inactive */
 	var styleInactiveLink = function(link) {
 	  if (!link.hasClass('active'))
 	    return;
-	    
+
     link.removeClass('active');
     var curText = link.text();
     link.text(curText.substr(1, curText.length - 2))
 	};
-	
+
 	//
 	// Unobtrusively add behaviour to certain classes
 	//
-	
+
 	$('.content-on-hover').hover(
 	  function() {
 	    $(this).find(".on-over").removeClass('hidden');
@@ -90,15 +90,15 @@ $(function() {
       $(this).find(".on-out").removeClass('hidden');
 	  }
 	);
-	
+
 	//
 	// Gallery setup
 	//
-	
+
   $(".gallery-link").click(function() {
     var galKey = $(this).data("gal-key");
     var gallery = window.galleryInfo[galKey];
-    
+
     $.fancybox(gallery.slice(), {
       'padding'           : 0,
       'transitionIn'      : 'fade',
@@ -106,7 +106,7 @@ $(function() {
       'type'              : 'image',
       'changeFade'        : 100
     });
-  }); 
+  });
 
   //
   // Contact form
@@ -170,11 +170,11 @@ $(function() {
     return false;
   });
 
-	
+
 	//
 	// Initialize history management
 	//
-	
+
 	$.history.init(function(hash) {
 	  _gaq.push(['_trackPageview', '/' + hash]);
     selectPage(hash == "" ? "home" : hash);

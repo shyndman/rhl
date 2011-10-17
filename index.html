@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 	     Remove this if you use the .htaccess -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
@@ -15,13 +15,13 @@
 	<meta name="description" content="Landscape design and build, serving Toronto and the GTA. Services include full site design, natural stone work, custom carpentry, planting design, lighting, irrigation, and much more.">
 	<meta name="keywords" content="Landscape design and build, serving Toronto and the GTA. Services include full site design, natural stone work, custom carpentry, planting design, lighting, irrigation, and much more.">
 	<meta name="author" content="Scott Hyndman">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- CSS : implied media="all" -->
 	<link rel="stylesheet" type="text/css" href="css/screen.css?v=3">
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css">
-  
+
 	<!-- Google Font Directory -->
 	<!--link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:bold&subset=latin"-->
 
@@ -29,7 +29,7 @@
 	<script src="js/libs/modernizr-1.5.min.js"></script>
 </head>
 <body>
-	<!-- Logos and Header -->  
+	<!-- Logos and Header -->
   <div id="header-container">
     <!-- Should be able to use <header> here, but Firefox won't let me fix width -->
   	<div id="header">
@@ -42,11 +42,11 @@
   		<div class="clearfix"></div>
   	</div>
 	</div>
-	
+
 	<!-- Content -->
 	<div id="content-container">
 	  <div id="content">
-  		<nav>
+  		<nav class="pages">
   			<ul>
   			  <li id="home-nav"><a href="#home" data-page-title="Home" class="active">[Home]</a></li>
   				<li id="portfolio-nav"><a href="#portfolio" data-page-title="Portfolio">Portfolio</a></li>
@@ -55,6 +55,7 @@
   				<li id="contact-nav"><a href="#contact" data-page-title="Contact">Contact</a></li>
   			</ul>
   		</nav>
+
   		<div id="home" class="page">
     		<div class="page-text">
     		  <p>Ross Hyndman Landscaping is a unique landscape design and build company operating in the Greater Toronto Area. We offer a wide variety of services that can be custom tailored to every budget.</p>
@@ -68,13 +69,21 @@
     		</div>
   		</div>
   		<div id="portfolio" class="page">
+        <!-- Page navigation -->
+        <!--div class="portfolio-nav">
+          <a href="#" class="active">[1]</a>
+          <a href="#">2</a>
+        </div-->
+
     		<div class="page-text">
           <p>The upcoming season is filled with exciting new projects and innovative design. Keep checking our portfolio for updated photographs, and new galleries of all of our most recent projects.</p>
           <img src="img/spacer.gif" class="spacer">
           <p class="testimonial">"Ross and his team did an amazing job transforming a very basic backyard into a place that was both functional and exceptionally captivating at the same time. The empathy, understanding, patience and commitment to the job that Ross and his crew displayed was excellent and the results stand on their own!...We are very satisfied with the finished product and look forward to engaging RHL for any future projects we may undertake."</p>
           <p><em>Marci Squires and Brian Anderson</em></p>
     		</div>
-    		<div class="page-pictures">
+
+        <!-- First page -->
+    		<div class="page-pictures page-1">
     		  <div class="top-slice slice content-on-hover gallery-link" data-gal-key="mimico">
     		    <div class="on-over hidden">
               <div class="slice-overlay">
@@ -85,7 +94,41 @@
               <div class="call-to-action">Click Image to View Gallery</div>
             </div>
     		  </div>
-    		  <div class="middle-slice slice content-on-hover gallery-link" data-gal-key="rhl">
+          <div class="middle-slice slice content-on-hover gallery-link" data-gal-key="deloraine">
+            <div class="on-over hidden">
+              <div class="slice-overlay">
+              </div>
+              <h3>Deloraine</h3>
+            </div>
+            <div class="on-out">
+              <div class="call-to-action">Click Image to View Gallery</div>
+            </div>
+          </div>
+          <div class="bottom-slice slice content-on-hover gallery-link" data-gal-key="bedford_courtyard">
+            <div class="on-over hidden">
+              <div class="slice-overlay">
+              </div>
+              <h3>Bedford Courtyard</h3>
+            </div>
+            <div class="on-out">
+              <div class="call-to-action">Click Image to View Gallery</div>
+            </div>
+          </div>
+    		</div>
+
+        <!-- Second page -->
+        <div class="page-pictures page-2" style="display:none">
+          <div class="top-slice slice content-on-hover gallery-link" data-gal-key="rouge_river">
+            <div class="on-over hidden">
+              <div class="slice-overlay">
+              </div>
+              <h3>Rouge River</h3>
+            </div>
+            <div class="on-out">
+              <div class="call-to-action">Click Image to View Gallery</div>
+            </div>
+          </div>
+          <div class="middle-slice slice content-on-hover gallery-link" data-gal-key="rlf">
             <div class="on-over hidden">
               <div class="slice-overlay">
               </div>
@@ -94,9 +137,8 @@
             <div class="on-out">
               <div class="call-to-action">Click Image to View Gallery</div>
             </div>
-    		  </div>
-    		  <!-- Bedford Park -->
-    		  <div class="bottom-slice slice content-on-hover gallery-link" data-gal-key="designs">
+          </div>
+          <div class="bottom-slice slice content-on-hover gallery-link" data-gal-key="designs">
             <div class="on-over hidden">
               <div class="slice-overlay">
               </div>
@@ -105,8 +147,8 @@
             <div class="on-out">
               <div class="call-to-action">Click Image to View Gallery</div>
             </div>
-    		  </div>
-    		</div>
+          </div>
+        </div>
   		</div>
   		<div id="services" class="page">
     		<div class="page-text">
@@ -178,11 +220,11 @@
   		</div>
 		</div>
   </div>
-  
+
   <footer>
     <h2 class="ir">get outside</h2>
   </footer>
-	
+
 	<script>
 	  //
 	  // Gallery content
@@ -196,7 +238,23 @@
         'img/portfolio/mimico/towards_house2_after.jpg',
         'img/portfolio/mimico/gate.jpg'
 	    ],
-	    "rhl": [
+      "deloraine": [
+        "img/portfolio/deloraine/9.jpg",
+        "img/portfolio/deloraine/1.jpg",
+        "img/portfolio/deloraine/3.jpg",
+        "img/portfolio/deloraine/5.jpg",
+        "img/portfolio/deloraine/6.jpg",
+        "img/portfolio/deloraine/8.jpg"
+      ],
+      "bedford_courtyard": [
+        "img/portfolio/bedford_courtyard/1.jpg",
+        "img/portfolio/bedford_courtyard/2.jpg",
+        "img/portfolio/bedford_courtyard/3.jpg",
+        "img/portfolio/bedford_courtyard/4.jpg",
+        "img/portfolio/bedford_courtyard/5.jpg",
+        "img/portfolio/bedford_courtyard/6.jpg"
+      ],
+	    "rlf": [
 	      'img/portfolio/rlf/back_after_6.jpg',
 	      'img/portfolio/rlf/back_after_2.jpg',
 	      'img/portfolio/rlf/stairs_after_2.jpg',
@@ -211,9 +269,18 @@
 	      'img/portfolio/designs/4.jpg',
 	      'img/portfolio/designs/5.jpg',
 	      'img/portfolio/designs/6.jpg'
-	    ]
+	    ],
+      "rouge_river": [
+        "img/portfolio/rouge_river/above.jpg",
+        "img/portfolio/rouge_river/at_house.jpg",
+        "img/portfolio/rouge_river/lattice.jpg",
+        "img/portfolio/rouge_river/pergola.jpg",
+        "img/portfolio/rouge_river/stepping_stones.jpg",
+        "img/portfolio/rouge_river/steps.jpg",
+        "img/portfolio/rouge_river/steps2.jpg"
+      ]
 	  };
-	  
+
 	  /*
     [
       'http://farm5.static.flickr.com/4044/4286199901_33844563eb.jpg',
@@ -225,17 +292,17 @@
     ]
     */
 	</script>
-	
-	
+
+
 	<script src="js/libs/jquery-1.4.4.js"></script>
-	
+
 	<!-- scripts concatenated and minified via ant build script-->
 	<script src="js/mylibs/underscore-1.1.3.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js?v=4"></script>
 	<script src="js/mylibs/jquery.fancybox-1.3.4.pack.js"></script>
 	<!-- end scripts-->
-	
+
 	<!--[if lt IE 7 ]>
 	  <script src="js/dd_belatedpng.js?v=1"></script>
 	<![endif]-->

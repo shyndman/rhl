@@ -61,12 +61,12 @@ a.active {
 
 #header-info-blurb {
   @include column(32, true);
-  
+
   font-size: $body-font-size;
   text-align: right;
   line-height: $body-line-height;
   margin-top: 20px;
-  
+
   em {
     font-size: 17px;
     color: $highlight-color;
@@ -86,22 +86,22 @@ a.active {
 #content {
   @include container;
   margin: 0 auto;
-  
-  nav {
+
+  nav.pages {
     @include push(26);
     @include column(41, true);
     margin-top: 27px;
     margin-bottom: 20px;
-    
+
     ul {
       list-style-type: none;
     }
-    
+
     li {
       font-size: $body-font-size;
       text-transform: uppercase;
       float: left;
-      
+
       a {
         text-align: center;
         display: block;
@@ -123,13 +123,13 @@ a.active {
 
 .page-text {
   @include column(20);
-  
+
   p {
     font-size: $body-font-size;
     line-height: $body-line-height;
     text-align: justify;
   }
-  
+
   em {
     font-weight: bold;
   }
@@ -137,9 +137,9 @@ a.active {
 
 .page-pictures {
   @include column(41);
-  
+
   margin-left: 37px;
-  
+
   .slice {
     width: 565px;
     height: 141px;
@@ -176,7 +176,7 @@ a.active {
     background-image: url('../img/slices/home/middle.jpg');
   }
   .bottom-slice {
-    background-image: url('../img/slices/home/bottom.jpg');    
+    background-image: url('../img/slices/home/bottom.jpg');
   }
 }
 
@@ -219,15 +219,40 @@ a.active {
     margin-top: (141 - 30px);
     margin-right: 5px;
   }
-  
-  .top-slice {
-    background-image: url('../img/slices/portfolio/squires.jpg');
+
+  .portfolio-nav {
+    font-size: $body-font-size + 1px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 0px;
+
+    a {
+      margin: 0 3px;
+    }
   }
-  .middle-slice {
-    background-image: url('../img/slices/portfolio/rlf.jpg');
+
+  .page-1 {
+    .top-slice {
+      background-image: url('../img/slices/portfolio/squires.jpg');
+    }
+    .middle-slice {
+      background-image: url('../img/slices/portfolio/deloraine.jpg');
+    }
+    .bottom-slice {
+      background-image: url('../img/slices/portfolio/bedford_park.jpg');
+    }
   }
-  .bottom-slice {
-    background-image: url('../img/slices/portfolio/design.jpg');    
+
+  .page-2 {
+    .top-slice {
+      background-image: url('../img/slices/portfolio/rouge_river.jpg');
+    }
+    .middle-slice {
+      background-image: url('../img/slices/portfolio/rlf.jpg');
+    }
+    .bottom-slice {
+      background-image: url('../img/slices/portfolio/design.jpg');
+    }
   }
 }
 
@@ -239,7 +264,7 @@ a.active {
     background-image: url('../img/slices/services/middle.jpg');
   }
   .bottom-slice {
-    background-image: url('../img/slices/services/bottom.jpg');    
+    background-image: url('../img/slices/services/bottom.jpg');
   }
 }
 
@@ -251,13 +276,13 @@ a.active {
     background-image: url('../img/slices/approach/middle.jpg');
   }
   .bottom-slice {
-    background-image: url('../img/slices/approach/bottom.jpg');    
+    background-image: url('../img/slices/approach/bottom.jpg');
   }
 }
 
-#contact {  
+#contact {
   font-size: $label-font-size;
-  
+
   input, textarea {
     color: $body-font-color;
     background-color: $input-color;
@@ -267,19 +292,19 @@ a.active {
     border: none;
     display: block;
     border: 1px solid #CCC;
-    
+
     &.error {
       border: 1px solid #F00;
       background-color: #FEE;
     }
   }
-  
+
   .submit-container {
     padding-top: 10px;
     text-align: right;
     font-weight: bold;
   }
-  
+
   textarea {
     height: 250px;
   }
@@ -293,7 +318,7 @@ a.active {
   @include push(15);
   @include column(10);
   height: $content-height;
-  
+
   h4 {
     font-weight: bold;
     margin-bottom: 14px;
@@ -311,7 +336,7 @@ a.active {
 
 footer {
   @include container;
-  
+
   h2 {
     background: transparent url('../img/get-outside.png') no-repeat right top;
     height: 33px;
