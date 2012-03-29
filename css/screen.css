@@ -57,32 +57,32 @@ a img {
   border: none;
 }
 
-/* line 28, ../css_src/screen.scss */
+/* line 29, ../css_src/screen.scss */
 body {
   background: white;
   color: #666666;
   font-family: "Century Gothic", sans-serif;
 }
 
-/* line 34, ../css_src/screen.scss */
+/* line 35, ../css_src/screen.scss */
 a, a:link, a:active, a:visited {
   color: #555;
   text-decoration: none;
 }
 
-/* line 39, ../css_src/screen.scss */
+/* line 40, ../css_src/screen.scss */
 a.active {
   color: #afc923;
   font-weight: bold;
 }
 
-/* line 46, ../css_src/screen.scss */
+/* line 47, ../css_src/screen.scss */
 #header-container {
   border-bottom: #333333 solid 5px;
   height: 95px;
 }
 
-/* line 51, ../css_src/screen.scss */
+/* line 52, ../css_src/screen.scss */
 #header {
   width: 960px;
   margin: 0 auto;
@@ -91,7 +91,7 @@ a.active {
   height: 95px;
 }
 
-/* line 56, ../css_src/screen.scss */
+/* line 57, ../css_src/screen.scss */
 #logo-title {
   display: inline;
   float: left;
@@ -100,12 +100,12 @@ a.active {
   background: transparent url("../img/logo.png") no-repeat;
   height: 95px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #logo-title {
   overflow-x: hidden;
 }
 
-/* line 62, ../css_src/screen.scss */
+/* line 63, ../css_src/screen.scss */
 #header-info-blurb {
   display: inline;
   float: left;
@@ -116,17 +116,17 @@ a.active {
   line-height: 20px;
   margin-top: 20px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #header-info-blurb {
   overflow-x: hidden;
 }
-/* line 70, ../css_src/screen.scss */
+/* line 71, ../css_src/screen.scss */
 #header-info-blurb em {
   font-size: 17px;
   color: #afc923;
 }
 
-/* line 78, ../css_src/screen.scss */
+/* line 79, ../css_src/screen.scss */
 #content-container {
   height: 530px;
   overflow-y: hidden;
@@ -135,7 +135,7 @@ a.active {
   border-bottom: #afc923 solid 5px;
 }
 
-/* line 86, ../css_src/screen.scss */
+/* line 87, ../css_src/screen.scss */
 #content {
   width: 960px;
   margin: 0 auto;
@@ -143,7 +143,7 @@ a.active {
   *zoom: 1;
   margin: 0 auto;
 }
-/* line 90, ../css_src/screen.scss */
+/* line 91, ../css_src/screen.scss */
 #content nav.pages {
   display: inline;
   float: left;
@@ -156,80 +156,80 @@ a.active {
   margin-top: 27px;
   margin-bottom: 20px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content nav.pages {
   overflow-x: hidden;
 }
-/* line 96, ../css_src/screen.scss */
+/* line 97, ../css_src/screen.scss */
 #content nav.pages ul {
   list-style-type: none;
 }
-/* line 100, ../css_src/screen.scss */
+/* line 101, ../css_src/screen.scss */
 #content nav.pages li {
   font-size: 11px;
   text-transform: uppercase;
   float: left;
 }
-/* line 105, ../css_src/screen.scss */
+/* line 106, ../css_src/screen.scss */
 #content nav.pages li a {
   text-align: center;
   display: block;
 }
 
-/* line 113, ../css_src/screen.scss */
+/* line 114, ../css_src/screen.scss */
 #home-nav {
   width: 68px;
 }
 
-/* line 114, ../css_src/screen.scss */
+/* line 115, ../css_src/screen.scss */
 #portfolio-nav {
   width: 85px;
 }
 
-/* line 115, ../css_src/screen.scss */
+/* line 116, ../css_src/screen.scss */
 #services-nav {
   width: 103px;
 }
 
-/* line 116, ../css_src/screen.scss */
+/* line 117, ../css_src/screen.scss */
 #approach-nav {
   width: 117px;
 }
 
-/* line 117, ../css_src/screen.scss */
+/* line 118, ../css_src/screen.scss */
 #contact-nav {
   width: 78px;
 }
 
-/* line 119, ../css_src/screen.scss */
+/* line 120, ../css_src/screen.scss */
 .page {
   height: 530px;
   margin-bottom: 100px;
 }
 
-/* line 124, ../css_src/screen.scss */
+/* line 125, ../css_src/screen.scss */
 .page-text {
   display: inline;
   float: left;
   margin-right: 0px;
   width: 300px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .page-text {
   overflow-x: hidden;
 }
-/* line 127, ../css_src/screen.scss */
+/* line 128, ../css_src/screen.scss */
 .page-text p {
   font-size: 11px;
   line-height: 20px;
   text-align: justify;
 }
-/* line 133, ../css_src/screen.scss */
+/* line 134, ../css_src/screen.scss */
 .page-text em {
   font-weight: bold;
 }
 
-/* line 138, ../css_src/screen.scss */
+/* line 139, ../css_src/screen.scss */
 .page-pictures {
   display: inline;
   float: left;
@@ -237,52 +237,51 @@ a.active {
   width: 615px;
   margin-left: 37px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .page-pictures {
   overflow-x: hidden;
 }
-/* line 143, ../css_src/screen.scss */
+/* line 144, ../css_src/screen.scss */
 .page-pictures .slice {
   width: 565px;
   height: 141px;
   margin-bottom: 5px;
 }
 
-/* line 150, ../css_src/screen.scss */
+/* line 151, ../css_src/screen.scss */
 .testimonial {
   font-style: italic;
 }
 
-/* line 154, ../css_src/screen.scss */
+/* line 155, ../css_src/screen.scss */
 .top-slice {
   margin-top: 5px;
 }
 
-/* line 158, ../css_src/screen.scss */
+/* line 159, ../css_src/screen.scss */
 .middle-slice {
   margin-left: 26px;
 }
 
-/* line 162, ../css_src/screen.scss */
+/* line 163, ../css_src/screen.scss */
 .bottom-slice {
   margin-left: 52px;
 }
 
-/* line 166, ../css_src/screen.scss */
-.spacer {
-  margin: 4px auto;
-  display: block;
+/* line 168, ../css_src/screen.scss */
+#home .page-text p {
+  font-size: 12px;
+  margin-bottom: 16px;
 }
-
-/* line 172, ../css_src/screen.scss */
+/* line 173, ../css_src/screen.scss */
 #home .top-slice {
   background-image: url("../img/slices/home/top.jpg");
 }
-/* line 175, ../css_src/screen.scss */
+/* line 176, ../css_src/screen.scss */
 #home .middle-slice {
   background-image: url("../img/slices/home/middle.jpg");
 }
-/* line 178, ../css_src/screen.scss */
+/* line 179, ../css_src/screen.scss */
 #home .bottom-slice {
   background-image: url("../img/slices/home/bottom.jpg");
 }
@@ -312,6 +311,15 @@ a.active {
   margin-top: -141px;
 }
 /* line 209, ../css_src/screen.scss */
+#portfolio .page-text p {
+  font-size: 12px;
+}
+/* line 213, ../css_src/screen.scss */
+#portfolio .spacer {
+  margin: 10px auto;
+  display: block;
+}
+/* line 218, ../css_src/screen.scss */
 #portfolio .call-to-action {
   color: #222;
   font-size: 12px;
@@ -324,73 +332,73 @@ a.active {
   margin-top: 111px;
   margin-right: 5px;
 }
-/* line 223, ../css_src/screen.scss */
+/* line 232, ../css_src/screen.scss */
 #portfolio .portfolio-nav {
   font-size: 12px;
   text-transform: uppercase;
   text-align: right;
   margin-top: 0px;
 }
-/* line 229, ../css_src/screen.scss */
+/* line 238, ../css_src/screen.scss */
 #portfolio .portfolio-nav a {
   margin: 0 3px;
 }
-/* line 235, ../css_src/screen.scss */
+/* line 244, ../css_src/screen.scss */
 #portfolio .page-1 .top-slice {
   background-image: url("../img/slices/portfolio/squires.jpg");
 }
-/* line 238, ../css_src/screen.scss */
+/* line 247, ../css_src/screen.scss */
 #portfolio .page-1 .middle-slice {
   background-image: url("../img/slices/portfolio/deloraine.jpg");
 }
-/* line 241, ../css_src/screen.scss */
+/* line 250, ../css_src/screen.scss */
 #portfolio .page-1 .bottom-slice {
   background-image: url("../img/slices/portfolio/bedford_park.jpg");
 }
-/* line 247, ../css_src/screen.scss */
+/* line 256, ../css_src/screen.scss */
 #portfolio .page-2 .top-slice {
   background-image: url("../img/slices/portfolio/rouge_river.jpg");
 }
-/* line 250, ../css_src/screen.scss */
+/* line 259, ../css_src/screen.scss */
 #portfolio .page-2 .middle-slice {
   background-image: url("../img/slices/portfolio/rlf.jpg");
 }
-/* line 253, ../css_src/screen.scss */
+/* line 262, ../css_src/screen.scss */
 #portfolio .page-2 .bottom-slice {
   background-image: url("../img/slices/portfolio/design.jpg");
 }
 
-/* line 260, ../css_src/screen.scss */
+/* line 269, ../css_src/screen.scss */
 #services .top-slice {
   background-image: url("../img/slices/services/top.jpg");
 }
-/* line 263, ../css_src/screen.scss */
+/* line 272, ../css_src/screen.scss */
 #services .middle-slice {
   background-image: url("../img/slices/services/middle.jpg");
 }
-/* line 266, ../css_src/screen.scss */
+/* line 275, ../css_src/screen.scss */
 #services .bottom-slice {
   background-image: url("../img/slices/services/bottom.jpg");
 }
 
-/* line 272, ../css_src/screen.scss */
+/* line 281, ../css_src/screen.scss */
 #approach .top-slice {
   background-image: url("../img/slices/approach/top.jpg");
 }
-/* line 275, ../css_src/screen.scss */
+/* line 284, ../css_src/screen.scss */
 #approach .middle-slice {
   background-image: url("../img/slices/approach/middle.jpg");
 }
-/* line 278, ../css_src/screen.scss */
+/* line 287, ../css_src/screen.scss */
 #approach .bottom-slice {
   background-image: url("../img/slices/approach/bottom.jpg");
 }
 
-/* line 283, ../css_src/screen.scss */
+/* line 292, ../css_src/screen.scss */
 #contact {
   font-size: 13px;
 }
-/* line 286, ../css_src/screen.scss */
+/* line 295, ../css_src/screen.scss */
 #contact input, #contact textarea {
   color: #666666;
   background-color: #e2e2e2;
@@ -401,33 +409,33 @@ a.active {
   display: block;
   border: 1px solid #CCC;
 }
-/* line 296, ../css_src/screen.scss */
+/* line 305, ../css_src/screen.scss */
 #contact input.error, #contact textarea.error {
   border: 1px solid #F00;
   background-color: #FEE;
 }
-/* line 302, ../css_src/screen.scss */
+/* line 311, ../css_src/screen.scss */
 #contact .submit-container {
   padding-top: 10px;
   text-align: right;
   font-weight: bold;
 }
-/* line 308, ../css_src/screen.scss */
+/* line 317, ../css_src/screen.scss */
 #contact textarea {
   height: 250px;
 }
-/* line 312, ../css_src/screen.scss */
+/* line 321, ../css_src/screen.scss */
 #contact .address h5 {
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-/* line 318, ../css_src/screen.scss */
+/* line 327, ../css_src/screen.scss */
 #contact-deets {
   padding-top: 94px;
 }
 
-/* line 322, ../css_src/screen.scss */
+/* line 331, ../css_src/screen.scss */
 #contact-deets-labels {
   display: inline;
   float: left;
@@ -439,29 +447,29 @@ a.active {
   width: 150px;
   height: 530px;
 }
-/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #contact-deets-labels {
   overflow-x: hidden;
 }
-/* line 327, ../css_src/screen.scss */
+/* line 336, ../css_src/screen.scss */
 #contact-deets-labels h4 {
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-/* line 334, ../css_src/screen.scss */
+/* line 343, ../css_src/screen.scss */
 #contact-deets-values div {
   margin-bottom: 14px;
 }
 
-/* line 342, ../css_src/screen.scss */
+/* line 351, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 345, ../css_src/screen.scss */
+/* line 354, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -469,7 +477,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 355, ../css_src/screen.scss */
+/* line 364, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -481,7 +489,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 359, ../css_src/screen.scss */
+/* line 368, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -489,7 +497,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 363, ../css_src/screen.scss */
+/* line 372, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -497,7 +505,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 367, ../css_src/screen.scss */
+/* line 376, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -510,7 +518,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 370, ../css_src/screen.scss */
+/* line 379, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -522,14 +530,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 373, ../css_src/screen.scss */
+/* line 382, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 377, ../css_src/screen.scss */
+/* line 386, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -537,13 +545,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 378, ../css_src/screen.scss */
+/* line 387, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 380, ../css_src/screen.scss */
+/* line 389, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }

@@ -17,6 +17,7 @@ $site-background: #FFF;
 $title-font-size: 12px;
 $header-height: 95px;
 $body-font-size: 11px;
+$larger-font-size: 12px;
 $body-font-family: "Century Gothic", sans-serif;
 $body-line-height: 20px;
 $body-font-color: #666;
@@ -163,12 +164,12 @@ a.active {
   margin-left: 52px;
 }
 
-.spacer {
-  margin: 4px auto;
-  display: block;
-}
-
 #home {
+  .page-text p {
+    font-size: $larger-font-size;
+    margin-bottom: 16px;
+  }
+
   .top-slice {
     background-image: url('../img/slices/home/top.jpg');
   }
@@ -179,7 +180,6 @@ a.active {
     background-image: url('../img/slices/home/bottom.jpg');
   }
 }
-
 
 #portfolio {
   .slice {
@@ -204,6 +204,15 @@ a.active {
 
       position: relative;
       margin-top: -141px;
+  }
+
+  .page-text p {
+    font-size: $larger-font-size;
+  }
+
+  .spacer {
+    margin: 10px auto;
+    display: block;
   }
 
   .call-to-action {
