@@ -1,11 +1,11 @@
-/* line 4, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 4, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 html {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* line 18, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 18, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 .bp-reset-element, body, h1, h2, h3, h4, h5, h6, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, blockquote, q, th, td, caption, table,
 div, span, object, iframe, p,
 pre, a, abbr, acronym, address,
@@ -23,21 +23,21 @@ caption, tbody, tfoot, thead, tr {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 20, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 21, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 21, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote, q {
   quotes: "" "";
 }
-/* line 67, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 67, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 22, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 22, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 th, td, caption {
   float: none !important;
   text-align: left;
@@ -45,14 +45,14 @@ th, td, caption {
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 23, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 24, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+/* line 24, ../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -100,7 +100,7 @@ a.active {
   background: transparent url("../img/logo.png") no-repeat;
   height: 95px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #logo-title {
   overflow-x: hidden;
 }
@@ -116,7 +116,7 @@ a.active {
   line-height: 20px;
   margin-top: 20px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #header-info-blurb {
   overflow-x: hidden;
 }
@@ -156,7 +156,7 @@ a.active {
   margin-top: 27px;
   margin-bottom: 20px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content nav.pages {
   overflow-x: hidden;
 }
@@ -214,7 +214,7 @@ a.active {
   margin-right: 0px;
   width: 300px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .page-text {
   overflow-x: hidden;
 }
@@ -237,7 +237,7 @@ a.active {
   width: 615px;
   margin-left: 37px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .page-pictures {
   overflow-x: hidden;
 }
@@ -416,13 +416,18 @@ a.active {
 #contact textarea {
   height: 250px;
 }
+/* line 312, ../css_src/screen.scss */
+#contact .address h5 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 
-/* line 313, ../css_src/screen.scss */
+/* line 318, ../css_src/screen.scss */
 #contact-deets {
   padding-top: 94px;
 }
 
-/* line 317, ../css_src/screen.scss */
+/* line 322, ../css_src/screen.scss */
 #contact-deets-labels {
   display: inline;
   float: left;
@@ -434,29 +439,29 @@ a.active {
   width: 150px;
   height: 530px;
 }
-/* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 147, /Users/scotthyndman/.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #contact-deets-labels {
   overflow-x: hidden;
 }
-/* line 322, ../css_src/screen.scss */
+/* line 327, ../css_src/screen.scss */
 #contact-deets-labels h4 {
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-/* line 329, ../css_src/screen.scss */
+/* line 334, ../css_src/screen.scss */
 #contact-deets-values div {
   margin-bottom: 14px;
 }
 
-/* line 337, ../css_src/screen.scss */
+/* line 342, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 340, ../css_src/screen.scss */
+/* line 345, ../css_src/screen.scss */
 footer h2 {
   background: transparent url("../img/get-outside.png") no-repeat right top;
   height: 33px;
@@ -464,7 +469,7 @@ footer h2 {
 }
 
 /* For image replacement */
-/* line 350, ../css_src/screen.scss */
+/* line 355, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -476,7 +481,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 354, ../css_src/screen.scss */
+/* line 359, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -484,7 +489,7 @@ footer h2 {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 358, ../css_src/screen.scss */
+/* line 363, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -492,7 +497,7 @@ footer h2 {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 362, ../css_src/screen.scss */
+/* line 367, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -505,7 +510,7 @@ footer h2 {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 365, ../css_src/screen.scss */
+/* line 370, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -517,14 +522,14 @@ footer h2 {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 368, ../css_src/screen.scss */
+/* line 373, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 372, ../css_src/screen.scss */
+/* line 377, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -532,13 +537,13 @@ footer h2 {
   visibility: hidden;
 }
 
-/* line 373, ../css_src/screen.scss */
+/* line 378, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 375, ../css_src/screen.scss */
+/* line 380, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
