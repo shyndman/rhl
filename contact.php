@@ -9,7 +9,7 @@ include('config/smtp.php');
 @$phone = trim(addslashes($_POST['phone']));
 @$email = trim(addslashes($_POST['email']));
 
-if (strlen($name) == 0 || 
+if (strlen($name) == 0 ||
     strlen($message) == 0 ||
     strlen($email) == 0 ||
     strlen($phone) == 0)
@@ -28,8 +28,8 @@ fclose($fh);
 
 //Sending Email to form owner
 $sender = $email;
-$subject = "rosshyndman.com - $name sent you an email!";
-$recipient = "info@rosshyndman.com, scotty.hyndman@gmail.com";
+$subject = "redleaf.ca - $name sent you an email!";
+$recipient = "info@redleaf.ca, scotty.hyndman@gmail.com, info@rosshyndman.com";
 $text = "name: $name\n"
 . "phone: $phone\n"
 . "email: $email\n"
