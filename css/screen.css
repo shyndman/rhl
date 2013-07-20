@@ -78,26 +78,27 @@ body {
   background: white;
   color: #333333;
   font-family: "Koblenz";
+  margin-top: 12px;
 }
 
-/* line 57, ../css_src/screen.scss */
+/* line 58, ../css_src/screen.scss */
 a, a:link, a:active, a:visited {
   color: #555;
   text-decoration: none;
 }
 
-/* line 62, ../css_src/screen.scss */
+/* line 63, ../css_src/screen.scss */
 a.active {
   color: #ab2430;
   font-weight: bold;
 }
 
-/* line 69, ../css_src/screen.scss */
+/* line 70, ../css_src/screen.scss */
 #header-container {
   height: 95px;
 }
 
-/* line 73, ../css_src/screen.scss */
+/* line 74, ../css_src/screen.scss */
 #header {
   width: 960px;
   margin: 0 auto;
@@ -106,7 +107,7 @@ a.active {
   height: 95px;
 }
 
-/* line 78, ../css_src/screen.scss */
+/* line 79, ../css_src/screen.scss */
 #logo-title {
   display: inline;
   float: left;
@@ -120,7 +121,7 @@ a.active {
   overflow-x: hidden;
 }
 
-/* line 84, ../css_src/screen.scss */
+/* line 85, ../css_src/screen.scss */
 nav.pages {
   display: inline;
   float: left;
@@ -128,11 +129,11 @@ nav.pages {
   margin-top: 68px;
   margin-left: 78px;
 }
-/* line 91, ../css_src/screen.scss */
+/* line 92, ../css_src/screen.scss */
 nav.pages ul {
   list-style-type: none;
 }
-/* line 95, ../css_src/screen.scss */
+/* line 96, ../css_src/screen.scss */
 nav.pages li {
   font-size: 12px;
   letter-spacing: 1px;
@@ -141,24 +142,24 @@ nav.pages li {
   float: left;
   padding: 0 13px;
 }
-/* line 103, ../css_src/screen.scss */
+/* line 104, ../css_src/screen.scss */
 nav.pages li:last-child {
   padding-right: 0;
 }
-/* line 107, ../css_src/screen.scss */
+/* line 108, ../css_src/screen.scss */
 nav.pages li a {
   text-align: center;
   display: block;
 }
 
-/* line 116, ../css_src/screen.scss */
+/* line 117, ../css_src/screen.scss */
 #content-container {
   height: 480px;
   overflow-y: hidden;
   margin-top: 20px;
 }
 
-/* line 122, ../css_src/screen.scss */
+/* line 123, ../css_src/screen.scss */
 #content {
   width: 960px;
   margin: 0 auto;
@@ -167,13 +168,13 @@ nav.pages li a {
   margin: 0 auto;
 }
 
-/* line 127, ../css_src/screen.scss */
+/* line 128, ../css_src/screen.scss */
 .page {
   height: 480px;
   margin-bottom: 100px;
 }
 
-/* line 132, ../css_src/screen.scss */
+/* line 133, ../css_src/screen.scss */
 .page-text {
   display: inline;
   float: left;
@@ -185,18 +186,18 @@ nav.pages li a {
 * html .page-text {
   overflow-x: hidden;
 }
-/* line 136, ../css_src/screen.scss */
+/* line 137, ../css_src/screen.scss */
 .page-text p {
   font-size: 11px;
   line-height: 20px;
   text-align: justify;
 }
-/* line 142, ../css_src/screen.scss */
+/* line 143, ../css_src/screen.scss */
 .page-text em {
   font-weight: bold;
 }
 
-/* line 147, ../css_src/screen.scss */
+/* line 148, ../css_src/screen.scss */
 .page-pictures {
   display: inline;
   float: left;
@@ -209,48 +210,48 @@ nav.pages li a {
 * html .page-pictures {
   overflow-x: hidden;
 }
-/* line 153, ../css_src/screen.scss */
+/* line 154, ../css_src/screen.scss */
 .page-pictures .slice {
   width: 565px;
   height: 141px;
   margin-bottom: 13px;
 }
 
-/* line 160, ../css_src/screen.scss */
+/* line 161, ../css_src/screen.scss */
 .testimonial {
   font-style: italic;
   margin-bottom: 0 !important;
 }
 
-/* line 166, ../css_src/screen.scss */
+/* line 167, ../css_src/screen.scss */
 #home .page-text p {
   font-size: 12px;
   margin-bottom: 16px;
 }
-/* line 171, ../css_src/screen.scss */
+/* line 172, ../css_src/screen.scss */
 #home .top-slice {
   background-image: url("../img/slices/home/top.jpg");
 }
-/* line 174, ../css_src/screen.scss */
+/* line 175, ../css_src/screen.scss */
 #home .middle-slice {
   background-image: url("../img/slices/home/middle.jpg");
 }
-/* line 177, ../css_src/screen.scss */
+/* line 178, ../css_src/screen.scss */
 #home .bottom-slice {
   background-image: url("../img/slices/home/bottom.jpg");
 }
 
-/* line 183, ../css_src/screen.scss */
+/* line 184, ../css_src/screen.scss */
 #portfolio .page-text p {
   margin-bottom: 16px;
 }
-/* line 187, ../css_src/screen.scss */
+/* line 188, ../css_src/screen.scss */
 #portfolio .slice {
   overflow: hidden;
   cursor: pointer;
   cursor: hand;
 }
-/* line 193, ../css_src/screen.scss */
+/* line 194, ../css_src/screen.scss */
 #portfolio .slice-overlay {
   width: 565px;
   height: 141px;
@@ -258,7 +259,7 @@ nav.pages li a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 200, ../css_src/screen.scss */
+/* line 201, ../css_src/screen.scss */
 #portfolio h3 {
   color: #222;
   font-size: 14px;
@@ -268,11 +269,11 @@ nav.pages li a {
   position: relative;
   margin-top: -141px;
 }
-/* line 211, ../css_src/screen.scss */
+/* line 212, ../css_src/screen.scss */
 #portfolio .page-text p {
   font-size: 12px;
 }
-/* line 215, ../css_src/screen.scss */
+/* line 216, ../css_src/screen.scss */
 #portfolio .call-to-action {
   color: #222;
   font-size: 12px;
@@ -285,68 +286,68 @@ nav.pages li a {
   margin-top: 111px;
   margin-right: 5px;
 }
-/* line 229, ../css_src/screen.scss */
+/* line 230, ../css_src/screen.scss */
 #portfolio .portfolio-nav {
   font-size: 12px;
   text-transform: uppercase;
   text-align: right;
   margin-top: 0px;
 }
-/* line 235, ../css_src/screen.scss */
+/* line 236, ../css_src/screen.scss */
 #portfolio .portfolio-nav a {
   margin: 0 3px;
 }
-/* line 241, ../css_src/screen.scss */
+/* line 242, ../css_src/screen.scss */
 #portfolio .page-1 .top-slice {
   background-image: url("../img/slices/portfolio/squires.jpg");
 }
-/* line 244, ../css_src/screen.scss */
+/* line 245, ../css_src/screen.scss */
 #portfolio .page-1 .middle-slice {
   background-image: url("../img/slices/portfolio/deloraine.jpg");
 }
-/* line 247, ../css_src/screen.scss */
+/* line 248, ../css_src/screen.scss */
 #portfolio .page-1 .bottom-slice {
   background-image: url("../img/slices/portfolio/bedford_park.jpg");
 }
-/* line 253, ../css_src/screen.scss */
+/* line 254, ../css_src/screen.scss */
 #portfolio .page-2 .top-slice {
   background-image: url("../img/slices/portfolio/rouge_river.jpg");
 }
-/* line 256, ../css_src/screen.scss */
+/* line 257, ../css_src/screen.scss */
 #portfolio .page-2 .middle-slice {
   background-image: url("../img/slices/portfolio/rlf.jpg");
 }
-/* line 259, ../css_src/screen.scss */
+/* line 260, ../css_src/screen.scss */
 #portfolio .page-2 .bottom-slice {
   background-image: url("../img/slices/portfolio/design.jpg");
 }
 
-/* line 266, ../css_src/screen.scss */
+/* line 267, ../css_src/screen.scss */
 #services h4 {
   font-size: 12px;
   font-weight: 400;
 }
-/* line 270, ../css_src/screen.scss */
+/* line 271, ../css_src/screen.scss */
 #services h4::before {
   content: '[';
   color: #ab2430;
   margin-right: 2px;
 }
-/* line 276, ../css_src/screen.scss */
+/* line 277, ../css_src/screen.scss */
 #services h4::after {
   content: ']';
   color: #ab2430;
   margin-left: 2px;
 }
-/* line 283, ../css_src/screen.scss */
+/* line 284, ../css_src/screen.scss */
 #services p {
   margin: 3px 0 6px 10px;
 }
-/* line 287, ../css_src/screen.scss */
+/* line 288, ../css_src/screen.scss */
 #services .page-text {
   width: 370px;
 }
-/* line 291, ../css_src/screen.scss */
+/* line 292, ../css_src/screen.scss */
 #services .page-pictures {
   display: inline;
   float: left;
@@ -359,20 +360,20 @@ nav.pages li a {
 * html #services .page-pictures {
   overflow-x: hidden;
 }
-/* line 298, ../css_src/screen.scss */
+/* line 299, ../css_src/screen.scss */
 #services .top-slice {
   background-image: url("../img/slices/services/top.jpg");
 }
-/* line 301, ../css_src/screen.scss */
+/* line 302, ../css_src/screen.scss */
 #services .middle-slice {
   background-image: url("../img/slices/services/middle.jpg");
 }
-/* line 304, ../css_src/screen.scss */
+/* line 305, ../css_src/screen.scss */
 #services .bottom-slice {
   background-image: url("../img/slices/services/bottom.jpg");
 }
 
-/* line 310, ../css_src/screen.scss */
+/* line 311, ../css_src/screen.scss */
 #approach .page-text {
   display: inline;
   float: left;
@@ -383,11 +384,11 @@ nav.pages li a {
 * html #approach .page-text {
   overflow-x: hidden;
 }
-/* line 313, ../css_src/screen.scss */
+/* line 314, ../css_src/screen.scss */
 #approach .page-text p {
   margin-bottom: 16px;
 }
-/* line 318, ../css_src/screen.scss */
+/* line 319, ../css_src/screen.scss */
 #approach .page-pictures {
   display: inline;
   float: left;
@@ -399,25 +400,25 @@ nav.pages li a {
 * html #approach .page-pictures {
   overflow-x: hidden;
 }
-/* line 323, ../css_src/screen.scss */
+/* line 324, ../css_src/screen.scss */
 #approach .top-slice {
   background-image: url("../img/slices/approach/top.jpg");
 }
-/* line 326, ../css_src/screen.scss */
+/* line 327, ../css_src/screen.scss */
 #approach .middle-slice {
   background-image: url("../img/slices/approach/middle.jpg");
 }
-/* line 329, ../css_src/screen.scss */
+/* line 330, ../css_src/screen.scss */
 #approach .bottom-slice {
   background-image: url("../img/slices/approach/bottom.jpg");
   background-position: -3px 0;
 }
 
-/* line 335, ../css_src/screen.scss */
+/* line 336, ../css_src/screen.scss */
 #contact {
   font-size: 13px;
 }
-/* line 338, ../css_src/screen.scss */
+/* line 339, ../css_src/screen.scss */
 #contact input, #contact textarea {
   color: #333333;
   background-color: #e2e2e2;
@@ -428,33 +429,33 @@ nav.pages li a {
   display: block;
   border: 1px solid #cccccc;
 }
-/* line 348, ../css_src/screen.scss */
+/* line 349, ../css_src/screen.scss */
 #contact input.error, #contact textarea.error {
   border: 1px solid red;
   background-color: #FEE;
 }
-/* line 354, ../css_src/screen.scss */
+/* line 355, ../css_src/screen.scss */
 #contact .submit-container {
   padding-top: 10px;
   text-align: right;
   font-weight: bold;
 }
-/* line 360, ../css_src/screen.scss */
+/* line 361, ../css_src/screen.scss */
 #contact textarea {
   height: 250px;
 }
-/* line 364, ../css_src/screen.scss */
+/* line 365, ../css_src/screen.scss */
 #contact .address h5 {
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-/* line 370, ../css_src/screen.scss */
+/* line 371, ../css_src/screen.scss */
 #contact-deets {
   padding-top: 20px;
 }
 
-/* line 374, ../css_src/screen.scss */
+/* line 375, ../css_src/screen.scss */
 #contact-deets-labels {
   display: inline;
   float: left;
@@ -470,53 +471,53 @@ nav.pages li a {
 * html #contact-deets-labels {
   overflow-x: hidden;
 }
-/* line 379, ../css_src/screen.scss */
+/* line 380, ../css_src/screen.scss */
 #contact-deets-labels h4 {
   font-weight: bold;
   margin-bottom: 14px;
 }
 
-/* line 386, ../css_src/screen.scss */
+/* line 387, ../css_src/screen.scss */
 #contact-deets-values div {
   margin-bottom: 14px;
 }
 
-/* line 394, ../css_src/screen.scss */
+/* line 395, ../css_src/screen.scss */
 footer {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 398, ../css_src/screen.scss */
+/* line 399, ../css_src/screen.scss */
 footer .phone {
   border-bottom: #ab2430 solid 1px;
   text-align: right;
   color: #ab2430;
 }
-/* line 404, ../css_src/screen.scss */
+/* line 405, ../css_src/screen.scss */
 footer .deets {
   color: #666;
   font-size: 13px;
   padding-top: 4px;
 }
-/* line 409, ../css_src/screen.scss */
+/* line 410, ../css_src/screen.scss */
 footer .deets .pull-right {
   text-align: right;
 }
 
-/* line 415, ../css_src/screen.scss */
+/* line 416, ../css_src/screen.scss */
 .pull-left {
   float: left;
 }
 
-/* line 419, ../css_src/screen.scss */
+/* line 420, ../css_src/screen.scss */
 .pull-right {
   float: right;
 }
 
 /* For image replacement */
-/* line 426, ../css_src/screen.scss */
+/* line 427, ../css_src/screen.scss */
 .ir {
   display: block;
   text-indent: -999em;
@@ -528,7 +529,7 @@ footer .deets .pull-right {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 430, ../css_src/screen.scss */
+/* line 431, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -536,7 +537,7 @@ footer .deets .pull-right {
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
-/* line 434, ../css_src/screen.scss */
+/* line 435, ../css_src/screen.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -544,7 +545,7 @@ footer .deets .pull-right {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
-/* line 438, ../css_src/screen.scss */
+/* line 439, ../css_src/screen.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -557,7 +558,7 @@ footer .deets .pull-right {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
-/* line 441, ../css_src/screen.scss */
+/* line 442, ../css_src/screen.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -569,14 +570,14 @@ footer .deets .pull-right {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 444, ../css_src/screen.scss */
+/* line 445, ../css_src/screen.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
    j.mp/bestclearfix */
-/* line 448, ../css_src/screen.scss */
+/* line 449, ../css_src/screen.scss */
 .clearfix:before, .clearfix:after {
   content: "\0020";
   display: block;
@@ -584,13 +585,13 @@ footer .deets .pull-right {
   visibility: hidden;
 }
 
-/* line 449, ../css_src/screen.scss */
+/* line 450, ../css_src/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
 /* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
-/* line 451, ../css_src/screen.scss */
+/* line 452, ../css_src/screen.scss */
 .clearfix {
   zoom: 1;
 }
