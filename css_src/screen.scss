@@ -12,19 +12,41 @@
 
 // Constants
 
-$highlight-color: #AFC923;
+$highlight-color: #AB2430;
 $site-background: #FFF;
 $title-font-size: 12px;
 $header-height: 95px;
 $body-font-size: 11px;
 $larger-font-size: 12px;
-$body-font-family: "Century Gothic", sans-serif;
+$body-font-family: "Koblenz";
 $body-line-height: 20px;
-$body-font-color: #666;
-$content-height: 530px;
+$body-font-color: #333;
+$content-height: 480px;
 $input-color: #E2E2E2;
 $label-font-size: 13px;
 $input-font-size: 16px;
+
+@font-face {
+    font-family: 'Koblenz';
+    src: url('../fonts/koblenz-regular-webfont.eot');
+    src: url('../fonts/koblenz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/koblenz-regular-webfont.woff') format('woff'),
+         url('../fonts/koblenz-regular-webfont.ttf') format('truetype'),
+         url('../fonts/koblenz-regular-webfont.svg#koblenz-regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Koblenz';
+    src: url('../fonts/koblenz-bold-webfont.eot');
+    src: url('../fonts/koblenz-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/koblenz-bold-webfont.woff') format('woff'),
+         url('../fonts/koblenz-bold-webfont.ttf') format('truetype'),
+         url('../fonts/koblenz-bold-webfont.svg#koblenz-boldregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
 
 body {
 	background: $site-background;
@@ -45,7 +67,6 @@ a.active {
 // Header
 
 #header-container {
-  border-bottom: #333333 solid 5px;
   height: $header-height;
 }
 
@@ -55,22 +76,38 @@ a.active {
 }
 
 #logo-title {
-	@include column(32);
-	background: transparent url('../img/logo.png') no-repeat;
+	@include column(26);
+	background: transparent url('../img/logo.png') 0 6px no-repeat;
 	height: $header-height;
 }
 
-#header-info-blurb {
-  @include column(32, true);
+nav.pages {
+  display: inline;
+  float: left;
+  width: 491px;
+  margin-top: 68px;
+  margin-left: 78px;
 
-  font-size: $body-font-size;
-  text-align: right;
-  line-height: $body-line-height;
-  margin-top: 20px;
+  ul {
+    list-style-type: none;
+  }
 
-  em {
-    font-size: 17px;
-    color: $highlight-color;
+  li {
+    font-size: $body-font-size + 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    float: left;
+    padding: 0 13px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    a {
+      text-align: center;
+      display: block;
+    }
   }
 }
 
@@ -79,43 +116,13 @@ a.active {
 #content-container {
   height: $content-height;
   overflow-y: hidden;
-  margin-top: 3px;
-  border-top: #afc923 solid 5px;
-  border-bottom: #afc923 solid 5px;
+  margin-top: 20px;
 }
 
 #content {
   @include container;
   margin: 0 auto;
-
-  nav.pages {
-    @include push(26);
-    @include column(41, true);
-    margin-top: 27px;
-    margin-bottom: 20px;
-
-    ul {
-      list-style-type: none;
-    }
-
-    li {
-      font-size: $body-font-size;
-      text-transform: uppercase;
-      float: left;
-
-      a {
-        text-align: center;
-        display: block;
-      }
-    }
-  }
 }
-
-#home-nav { width: 68px; }
-#portfolio-nav { width: 85px; }
-#services-nav { width: 103px; }
-#approach-nav { width: 117px; }
-#contact-nav { width: 78px; }
 
 .page {
   height: $content-height;
@@ -123,7 +130,8 @@ a.active {
 }
 
 .page-text {
-  @include column(20);
+  @include column(19);
+  margin-left: 30px;
 
   p {
     font-size: $body-font-size;
@@ -137,31 +145,21 @@ a.active {
 }
 
 .page-pictures {
-  @include column(41);
+  @include column(38);
 
-  margin-left: 37px;
+  overflow: none;
+  margin-left: 75px;
 
   .slice {
     width: 565px;
     height: 141px;
-    margin-bottom: 5px;
+    margin-bottom: 13px;
   }
 }
 
 .testimonial {
   font-style: italic;
-}
-
-.top-slice {
-  margin-top: 5px;
-}
-
-.middle-slice {
-  margin-left: 26px;
-}
-
-.bottom-slice {
-  margin-left: 52px;
+  margin-bottom: 0 !important;
 }
 
 #home {
@@ -182,6 +180,10 @@ a.active {
 }
 
 #portfolio {
+  .page-text p {
+    margin-bottom: 16px;
+  }
+
   .slice {
     overflow: hidden;
     cursor:pointer;
@@ -208,11 +210,6 @@ a.active {
 
   .page-text p {
     font-size: $larger-font-size;
-  }
-
-  .spacer {
-    margin: 10px auto;
-    display: block;
   }
 
   .call-to-action {
@@ -266,6 +263,38 @@ a.active {
 }
 
 #services {
+  h4 {
+    font-size: 12px;
+    font-weight: 400;
+
+    &::before {
+      content: '[';
+      color: $highlight-color;
+      margin-right: 2px;
+    }
+
+    &::after {
+      content: ']';
+      color: $highlight-color;
+      margin-left: 2px;
+    }
+  }
+
+  p {
+    margin: 3px 0 6px 10px;
+  }
+
+  .page-text {
+    width: 370px;
+  }
+
+  .page-pictures {
+    @include column(33);
+
+    overflow: none;
+    margin-left: 50px;
+  }
+
   .top-slice {
     background-image: url('../img/slices/services/top.jpg');
   }
@@ -278,6 +307,19 @@ a.active {
 }
 
 #approach {
+  .page-text {
+    @include column(20);
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+
+  .page-pictures {
+    @include column(38);
+    margin-left: 60px;
+  }
+
   .top-slice {
     background-image: url('../img/slices/approach/top.jpg');
   }
@@ -286,6 +328,7 @@ a.active {
   }
   .bottom-slice {
     background-image: url('../img/slices/approach/bottom.jpg');
+    background-position: -3px 0;
   }
 }
 
@@ -325,7 +368,7 @@ a.active {
 }
 
 #contact-deets {
-  padding-top: 94px;
+  padding-top: 20px;
 }
 
 #contact-deets-labels {
@@ -350,12 +393,31 @@ a.active {
 
 footer {
   @include container;
+  // margin-bottom: 6px;
 
-  h2 {
-    background: transparent url('../img/get-outside.png') no-repeat right top;
-    height: 33px;
-    margin-top: 3px;
+  .phone {
+    border-bottom: $highlight-color solid 1px;
+    text-align: right;
+    color: $highlight-color;
   }
+
+  .deets {
+    color: #666;
+    font-size: 13px;
+    padding-top: 4px;
+
+    .pull-right {
+      text-align: right;
+    }
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
 
 // Semantic classes (pulled from HTML5 boilerplate)

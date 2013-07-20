@@ -19,8 +19,8 @@ $(function() {
 	// For testing without js:
 	// return;
 
-	var activeLink = $('#content nav.pages a.active');
-	$('#content nav.pages a').each(function() {
+	var activeLink = $('nav.pages a.active');
+	$('nav.pages a').each(function() {
 	  if ($(this).hasClass('active'))
 	    return;
 
@@ -42,7 +42,7 @@ $(function() {
 	/** Selects the specified page */
 	var selectPage = function(page) {
 	  // Determine nav link associated with page
-	  var clickedLink = $('#content nav a[href=#' + page + ']');
+	  var clickedLink = $('nav a[href=#' + page + ']');
 
 	  // Div hiding (to be replaced with animation)
 	  $(activeLink.attr('href')).hide();
